@@ -54,15 +54,18 @@ video{
 
 .inf_back{
 	width: 100%;
-	height: 100%;
+	height: 300px;
+	top: 300px;
 	position: absolute;
 	float: left;
 	color: #fff;
+	text-align: center;
 	z-index: -49;
 	
 }
 
 .inf_back h1{
+
 	font-size: 500%;
 	font-weight:300;
 }
