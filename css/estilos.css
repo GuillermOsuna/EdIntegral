@@ -66,7 +66,7 @@ video{
 
 .inf_back h1{
 
-	font-size: 500%;
+	font-size: 5em;
 	font-weight:300;
 }
 
@@ -106,63 +106,57 @@ video{
 /***************************
            IMAGENES
 ***************************/
-img{
-	width: 500px;
-	height: 500px;
-}
-.opciones{
-	width: 100%;
-	height: 700px;
-}
-#imagenes{
-	display: block;
-	width: 100%;
-	height: 100%;
+#section1{
+	background: url(../img/background3.jpg) 50% 50% no-repeat;
 }
 
-#imagenes ul{
+#section2{
+	
+	background: url(../img/background3.jpg) 50% 50% no-repeat;
+}
+#section3{
+	
+	background: url(../img/background3.jpg) 50% 50% no-repeat;
+}
+#section4{
+	
+	background: url(../img/background3.jpg) 50% 50% no-repeat;
+}
+
+
+#section1, #section2, #section3, #section4{
+	margin:0;
+	padding: 0;
 	width: 50%;
-	height: 50%;
+	height: 500px;
 	float: left;
-	list-style: none;
-}
-#imagenes ul li{
-	width: 100%;
-	height: 100%;
-}
-#imagenes ul li img{
-	width: 100%;
-	height: 100%;
+} 
+article{
+	padding: 100px;
 }
 
 #vacio{
 	position: absolute;
 	width: 100%;
-	height: 400px;
+	height: 1400px;
 	background: blue;
 	z-index: -99;
 	opacity: 0;
 	
-}
-#imagenes ul li h1{
-	position: absolute;
-	background-color: rgba(0,0,0,0.4);
-	color:#fff;
-}
-#imagenes ul li img:hover{
 }
 
 /******************************
 			FOOTER
 ******************************/
 footer{
-	color:green;
+	color:#fff;
 	position: fixed;
 	bottom: -1px;
-	background-color: black;
+	background-color: #6B6B6B;
 	width: 100%;
 	height: 405px;
 	z-index: -100;
+	text-align: center;
 
 }
 
