@@ -31,15 +31,6 @@ video{
     z-index: 100;
 }
 
-/*nav
-{
-	width: 100%;
-    position: fixed;
-    top:0;
-    left:0;
-    background: rgba(53, 145, 204, 0);
-    z-index: 100;
-} */
 #cabezera nav ul 
 {
 	list-style: none;
@@ -81,9 +72,9 @@ video{
 
 #cabezera nav .fade-transparent {
 
-      background-color: transparent;
+    background-color: transparent;
 
-      -webkit-transition: background-color 1s;
+    -webkit-transition: background-color 1s;
     transition: background-color 1s;
 
 }
@@ -109,14 +100,6 @@ video{
 	color:#666666;
 
 }
-
-
-
-
-
-
-
-
 
 
 .inf_back{
