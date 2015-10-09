@@ -24,6 +24,15 @@
 	});
 
 	</script>
+
+	<script>
+	$(document).scroll(function() {
+  var dHeight = $(this).height()-$(window).height();
+  if (dHeight >= $(this).scrollTop()) {
+  $('nav').css('background', 'rgba(51, 51, 51,' + $(this).scrollTop() / $(window).height() + ')');
+  }
+});
+	</script>
 	
 	<title>
 		
@@ -34,13 +43,72 @@
 
 
 <body>
+	<div id="cabezera" >
+	<nav >
+		<div>
+			<img src="img/logointegral2.png" class="logo">
+		</div>
+
+		<div class ="navi">
+		        <span style="transition-delay: 0.01s;">E</span>
+		        <span style="transition-delay: 0.05s;">D</span>
+		        <span style="transition-delay: 0.9s;">I</span>
+		        <span style="transition-delay: 0.13s;">F</span>
+		        <span style="transition-delay: 0.17s;">I</span>
+		        <span style="transition-delay: 0.21s;">C</span>
+		        <span style="transition-delay: 0.25s;">A</span>
+		        <span style="transition-delay: 0.29s;">C</span>
+		        <span style="transition-delay: 0.34s;">I</span>  
+		        <span style="transition-delay: 0.39s;">O</span> 
+		        <span style="transition-delay: 0.43s;">N</span>
+		        <br>
+
+		        <span style="transition-delay: 0.47s;">I</span>
+		        <span style="transition-delay: 0.51s;">N</span>
+		        <span style="transition-delay: 0.55s;">T</span>
+		        <span style="transition-delay: 0.59s;">E</span>
+		        <span style="transition-delay: 0.63s;">G</span>
+		        <span style="transition-delay: 0.67s;">R</span>
+		        <span style="transition-delay: 0.71s;">A</span>
+		        <span style="transition-delay: 0.75s;">L</span>
+		</div>
+		
+		<ul>
+
+			<li>
+				<a href ="contacto.html">Contacto</a>
+			</li>
+			<li>
+				<a href ="portafolio.html">Portafolio</a>
+			</li>
+			<li>
+				<a>Servicios</a>
+			</li>
+			<li>
+				<a >Eventos</a>
+			</li>
+			<li>
+				<a>Nosotros</a>
+			</li>
+			<li>
+				<a href ="index.html">Inicio</a>
+			</li>
+		</ul>
+	</nav>
+	</div>
+</header>
 	
 
 	<section id="Home" data-type="parallax_section" data-speed="10">
 		<article>
 			<div class="geek">
 				<h2>
-					Pagina: 1
+					<p class="hvr-fade">
+					Proyecto: Edificio coorporativo integral <p>
+					Guadalajara,Mexico <p>
+				    2014 <a href="">Ver mas...</a>	
+					</p>
+					
 				</h2>
 			</div>
 		</article>
@@ -50,7 +118,12 @@
 		<article>
 			<div class="geek">
 				<h2>
-					Pagina: 2
+					<p class="hvr-fade">
+					Proyecto: Puente AB <p>
+					somewhere, el mundo <p>
+					2010.  <a href="">Ver mas...</a>
+				   </p>
+					
 				</h2>
 			</div>
 		</article>
@@ -59,7 +132,41 @@
 		<article>
 			<div class="geek">
 				<h2>
-					Pagina: 3
+					<p class="hvr-fade">
+					Proyecto: Escuela Privada <p>
+					somewhere, el mundo <p>
+					2005. <a href="">Ver mas...</a>
+					</p>
+					
+				</h2>
+			</div>
+		</article>
+	</section>
+	<section id="section4" data-type="parallax_section" data-speed="10">
+		<article>
+			<div class="geek">
+				<h2>
+					<p class="hvr-fade">
+					Proyecto: Ethiad <p>
+					From very, far away <p>
+					2005. <a href="">Ver mas...</a>
+						
+					</p>
+					
+				</h2>
+			</div>
+		</article>
+	</section>
+	<section id="section5" data-type="parallax_section" data-speed="10">
+		<article>
+			<div class="geek">
+				<h2 class="hvr-fade">
+					<p >
+						Proyecto: Libreria publica <p>
+					seattle, washington <p>
+					1997. <a href="">Ver mas...</a>
+					</p>
+					
 				</h2>
 			</div>
 		</article>
