@@ -270,11 +270,11 @@ footer{
 }
 
 
-@media screen and (max-width: 660px){
+@media screen and (max-width: 864px){
 	
-	/*#section1, #section2, #section3, #section4{
+	#section1, #section2, #section3, #section4{
 	width: 100%;
-	} */	
+	} 
 }
 
 
