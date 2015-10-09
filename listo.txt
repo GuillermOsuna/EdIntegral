@@ -1,6 +1,12 @@
 
 
-
+$(document).scroll(function() {
+  var dHeight = $(this).height()-$(window).height();
+  if (dHeight >= $(this).scrollTop()) {
+  $('nav').css('background', 'rgba(51, 51, 51,' + $(this).scrollTop() / dHeight + ')');
+  }
+});
+	</script>
   }
 
 });
