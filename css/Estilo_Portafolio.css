@@ -6,7 +6,7 @@ body
 {
 	font-family:'Open Sans' serif;
 }
-h2{
+h1{
 	color:#fff;
 
 	text-align: center;
@@ -135,7 +135,7 @@ h2{
  	margin: 0px auto;
  	width: 517px;
  }
-h2{
+h1{
 	color: white;
 	text-align: left;
 	vertical-align: top;
@@ -144,7 +144,7 @@ h2{
 
 }
 
-h2 p
+h1 p
 {
 	
 	padding:6px;
@@ -155,7 +155,7 @@ h2 p
 
 }
 
-h2 p a 
+h1 p a 
 {
 	color: #fff;
 	margin-left: 35px;
