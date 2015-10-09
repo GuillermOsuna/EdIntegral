@@ -45,6 +45,10 @@ video{
 	list-style: none;
 }
 
+#cabezera nav .logo
+{
+	width: 45px;
+}
 #cabezera nav ul li
 {
 	float: right;
