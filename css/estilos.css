@@ -47,21 +47,26 @@ video{
 
 #cabezera nav .logo
 {
-	width: 45px;
+	width: 35px;
+	padding-left: 10px;
+	margin-top: 3px;
+	margin-bottom: -55px;
 }
 #cabezera nav ul li
 {
 	float: right;
 	color: #fff;
+	
 
 }
 
 #cabezera nav ul li a 
 {
 	display: block;
-	padding: 20px;
+	padding: 27px;
 	text-decoration: none;
 	color: #fff;
+	margin-top: -20px;
 
 }
 
@@ -79,6 +84,28 @@ video{
 
       -webkit-transition: background-color 1s;
     transition: background-color 1s;
+
+}
+
+.navi
+{
+	font-size: 23px;
+	color: #fff;
+	float:left;
+    margin-top: -10px;
+    padding-left:50px ;
+    -webkit-transition-property:color, text;
+    -webkit-transition-duration: .05s, 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property:color, text;
+    -moz-transition-duration:0.5s;
+    -moz-transition-timing-function: ease;
+    -o-transition-property:color, text;
+    -o-transition-duration:0.5s;
+    -o-transition-timing-function: ease;
+} 
+.navi:hover{
+	color:#666666;
 
 }
 
