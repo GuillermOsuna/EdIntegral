@@ -5,6 +5,7 @@
 
 body{
 	font-family:'Open Sans' serif;
+
 }
 header{
 	width: 100%;
@@ -21,6 +22,7 @@ video{
 
 #cabezera nav
 {
+
 	width: 100%;
     position: fixed;
     top:0;
@@ -55,6 +57,7 @@ video{
 	display: block;
 	padding: 20px;
 	text-decoration: none;
+	color: #fff;
 
 }
 
