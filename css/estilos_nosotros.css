@@ -190,13 +190,9 @@ header{
 	font-size: 20px;
 	text-align: left;
 	margin-left:-65px;
+	color: white;
 
 }
-
-
-
-
-
 
 /***************************
            IMAGENES
@@ -211,8 +207,7 @@ article{
 	height: 1200px;
 	background-color: rgba(0, 255, 255, 0.3);
 	z-index: -99;
-	
-	
+		
 }
 
 #vacio{
@@ -221,8 +216,7 @@ article{
 	background-color: black;
 	/*background-color: rgba(0, 0, 255, 0.3);*/
 	z-index: -99;
-	opacity: .3;
-	
+	opacity: .3;	
 }
 
 /******************************
