@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-     
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
 	
@@ -19,9 +19,13 @@
 	<script>
 	$(document).scroll(function() {
   var dHeight = $(this).height()-$(window).height();
+  var cont;
   if (dHeight >= $(this).scrollTop()) {
-  $('nav').css('background', 'rgba(51, 51, 51,' + $(this).scrollTop() / $(window).height() + ')');
-  }
+  $('nav').css('background', 'rgba(200, 200, 200,' + $(this).scrollTop() / $(window).height() + ')');
+  $('#cabezera nav').css('box-shadow', '2px 1px 3px rgba(150,150,150,' + $(this).scrollTop() / $(window).height() + ')');
+  }	
+
+  
 });
 	</script>
 
@@ -38,7 +42,8 @@
 </head>
 
 <body>
-<header  >
+
+<header>
 	<div id="cabezera" >
 	<nav >
 		<div>
@@ -59,14 +64,14 @@
 		        <span style="transition-delay: 0.53s;">N</span>
 		        <br>
 
-		        <span style="transition-delay: 0.58s;">I</span>
-		        <span style="transition-delay: 0.63s;">N</span>
-		        <span style="transition-delay: 0.68s;">T</span>
-		        <span style="transition-delay: 0.73s;">E</span>
-		        <span style="transition-delay: 0.78s;">G</span>
-		        <span style="transition-delay: 0.83s;">R</span>
-		        <span style="transition-delay: 0.88s;">A</span>
-		        <span style="transition-delay: 0.93s;">L</span>
+		        <span style="transition-delay: 0.01s;">I</span>
+		        <span style="transition-delay: 0.08s;">N</span>
+		        <span style="transition-delay: 0.13s;">T</span>
+		        <span style="transition-delay: 0.18s;">E</span>
+		        <span style="transition-delay: 0.23s;">G</span>
+		        <span style="transition-delay: 0.28s;">R</span>
+		        <span style="transition-delay: 0.33s;">A</span>
+		        <span style="transition-delay: 0.38s;">L</span>
 		        
 		</div>
 		
@@ -93,13 +98,15 @@
 		</ul>
 	</nav>
 	</div>
+	
 </header>
 	
 	
 		<div id="back" >
-		<video data-stellar-ratio=".3" src="background2.mp4" reload="auto" autoplay="true" loop="loop" muted="muted" data-stellar-ratio="2"></video>
+		<video  src="background3.mp4" reload="auto" autoplay="true" loop="loop" muted="muted" data-stellar-ratio=".5"></video>
 		</div>
-		<div  data-stellar-ratio=".4" class="inf_back">
+
+		<div  data-stellar-ratio=".5" class="inf_back">
 			<h1>
 				EDIFICACION INTEGRAL
 			</h1>
@@ -179,10 +186,8 @@
 		
 	</section>
 
-
-
-	<section id="vacio">
-		
+	<section id="foto_fondo">
+		<img src="img/office.jpg" alt="">
 	</section>
 
 
