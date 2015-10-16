@@ -12,11 +12,17 @@ header{
 }
 
 video{
+
 	position: absolute;
 	top:1px;
 	width: 100%;
 	display:block;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size: cover;
 	z-index: -50;
+
 	
 }
 
@@ -159,7 +165,7 @@ video{
            IMAGENES
 ***************************/
 #section1{
-	background: url(../img/background3.jpg) 50% 50% no-repeat;
+	background: url(../img/background.jpg) 50% 50% no-repeat;
 }
 
 #section2{
@@ -172,7 +178,7 @@ video{
 }
 #section4{
 	
-	background: url(../img/background3.jpg) 50% 50% no-repeat;
+	background: url(../img/background.jpg) 50% 50% no-repeat;
 }
 
 
@@ -211,24 +217,48 @@ article{
 			VACIO
 ******************************/
 
-#efecto_fondo{
-	width: 100%;
-	height: 600px;
-	float: left;
-	background-color: rgba(255, 99, 0, 0.8);
-	z-index: -50;
 
+
+#prueba1{
 	
+	background: url(../img/office2.jpg) 50% 0 no-repeat fixed;
 }
 
-#foto_fondo{
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 600px;
+#prueba1{
 	float: left;
-	z-index: 1000;	
+	margin:0px auto;
+	max-width: 1920px;
+	height: 250px;
+	position: relative;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size: cover;
+
 }
+ #prueba1{
+ 	box-shadow: 0 0 20px rgba(0,0,0,0,0.4);
+ 	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0,0.4);
+ }
+ article{
+ 	padding: 100px;
+ }
+ .geek{
+ 	background: url();
+ 	display: block;
+ 	height: 368px;
+ 	margin: 0px auto;
+ 	width: 517px;
+ }
+
+ #vacio{
+ 	float: left;
+ 	width: 100%;
+ 	height: 395px;
+ 	background-color: transparent;
+ }
+
 
 /******************************
 			FOOTER
@@ -239,7 +269,7 @@ footer{
 	bottom: -1px;
 	background-color: #6B6B6B;
 	width: 100%;
-	height: 405px;
+	height: 400px;
 	z-index: -100;
 	text-align: center;
 
