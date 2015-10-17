@@ -8,13 +8,13 @@ function main(){
 
 		if(contador==1){
 			$('#menu2').animate({
-				left:'100%'
+				left:'0%'
 			});
 			contador=0;
 		}else
 		{
 			$('#menu2').animate({
-				left:'90'
+				left:'100%'
 			});
 			contador=1;
 		}
