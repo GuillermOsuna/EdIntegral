@@ -11,6 +11,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
+     <link rel="stylesheet" href="fonts.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
@@ -20,16 +22,16 @@
 	$(document).scroll(function() {
   var dHeight = $(this).height()-$(window).height();
   var cont;
+  var myWidth;
+   myWidth = window.innerWidth;
+	$('#prueba1').css('height', myWidth/4);
+
   if (dHeight >= $(this).scrollTop()) {
   $('nav').css('background', 'rgba(200, 200, 200,' + $(this).scrollTop() / $(window).height() + ')');
   $('#cabezera nav').css('box-shadow', '2px 1px 3px rgba(150,150,150,' + $(this).scrollTop() / $(window).height() + ')');
-  }	
-
-  
+  }
 });
 	</script>
-
-
 	<script>
 		$(function(){
 		$(window).stellar();
@@ -45,8 +47,8 @@
 
 <header>
 	<div id="cabezera" >
-	<nav >
-		<div>
+	<nav>
+		<div class="div_logo">
 			<a href="index.html"><img src="img/logointegral2.png" class="logo"></a>
 		</div>
 
@@ -74,6 +76,11 @@
 		        <span style="transition-delay: 0.38s;">L</span>
 		        
 		</div>
+
+
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span></a>
+		</div>
 		
 		<ul>
 
@@ -100,7 +107,30 @@
 	</div>
 	
 </header>
-	
+	<section id="menu2">
+		<div id="nav2">
+			<ul>
+			<li>
+				<a href ="index.html" class="btn-inicio">Inicio</a>
+			</li>
+			<li>
+				<a href ="nosotros.html">Nosotros</a>
+			</li>
+			<li>
+				<a>Eventos</a>
+			</li>
+			<li>
+				<a>Servicios</a>
+			</li>
+			<li>
+				<a href ="portafolio.html">Portafolio</a>
+			</li>
+			<li>
+				<a href ="contacto.html"> Contacto</a>
+			</li>
+		</ul>
+		</div>
+	</section>	
 	
 		<div id="back" >
 		<video  src="background3.mp4" reload="auto" autoplay="true" loop="loop" muted="muted" data-stellar-ratio=".5"></video>
