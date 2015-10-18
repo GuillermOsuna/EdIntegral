@@ -223,16 +223,35 @@ video{
 	text-align: center;
 } 
 
-article{
-	display: block;
-	width: auto;
-	
+.section_rgba1, .section_rgba4 {
+	background-color: rgba(0,50,0,.3);
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	height: 400px;
 }
-.geek{
-	
-	width: 100%;
-	height: 100%;
-	z-index: 100;
+.section_rgba2{
+	background-color: rgba(0,0,50,.3);
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	height: 400px;
+}
+.section_rgba3 {
+	background-color: rgba(50,0,0,.3);
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	height: 400px;
+}
+.section_rgba1:hover, .section_rgba4:hover {
+	background-color: rgba(0,50,0,.8);
+}
+.section_rgba2:hover{
+	background-color: rgba(0,0,50,.8);
+}
+.section_rgba3:hover {
+	background-color: rgba(50,0,0,.8);
 }
 
 
