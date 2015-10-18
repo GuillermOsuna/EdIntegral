@@ -3,13 +3,57 @@
 	padding:0px;
 }
 
+
+
 body{
-	font-family:'Open Sans' serif;
-	width:100%;
+	font-family: "quadon","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+
 }
 header{
 	width: 100%;
 
+}
+
+h1
+{
+	font-family: "tungsten","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#fff;
+
+	text-align: center;
+}
+
+#back 
+{
+	height: 550px;
+
+}
+.fondoP{
+	position: relative;
+	width: 100%;
+	height:100%;
+	z-index: -50;
+	margin-bottom: -15px;
+}
+.inf_back{
+	width: 100%;
+	height: 300px;
+	top: 190px;
+	position: absolute;
+	float: left;
+	color: #fff;
+	text-align: center;
+	z-index: -49;
+	
+}
+
+.inf_back h1{
+	 font-size: 5em;
+    letter-spacing: 0.14em;
+}
+
+.inf_back p{
+	font-size: 20px;
 }
 
 #cabezera nav
@@ -19,9 +63,8 @@ header{
     position: fixed;
     top:0;
     left:0;
-    background: rgba(51, 51, 51, 0);
+    background: rgba(51, 51, 51 0);
     z-index: 100;
-
 }
 
 #cabezera nav ul 
@@ -32,7 +75,7 @@ header{
 
 #cabezera nav .logo
 {
-	width: 35px;
+	width: 27px;
 	padding-left: 10px;
 	margin-top: 3px;
 	margin-bottom: -55px;
@@ -68,7 +111,7 @@ header{
       background-color: transparent;
 
       -webkit-transition: background-color 1s;
-    transition: background-color 1s;
+    	transition: background-color 1s;
 
 }
 
@@ -93,58 +136,183 @@ header{
 	color:#666666;
 
 }
-/*********************************
-			CONTENIDO
-**********************************/
-#imag{
-	background-image: url(../img/trato.jpg);
-	background-size: 100vw 100vh;
-	background-attachment: fixed;
-	margin:0;
-	margin-top:-20px;
-	padding-top:120px;
+
+.contact 
+{
+	display: block;
+
 }
 
-form{
-	width: 450px;
-	margin: auto;
-	background: rgba(0, 0, 0, 0.4);
-	padding:10px 20px;
-	box-sizing: border-box;
-	margin-top: 20px;
-	border-radius: 7px;
+.contact section 
+{
+	display: block;
+
+
 }
 
-h2{
-	color:#fff;
-	text-align:center;
-	margin:0;
-	font-size:30px;
-	margin-bottom:20px;
+.contact div
+{
+	display: table-cell;
+}*/
+
+/*.block-half .direccion div
+{
+	width: 100%;
+
 }
-input, textarea{
-	width:100%;
-	margin-bottom:20px;
-	padding:7px;
-	box-sizing: border-box;
-	font-size:17px;
-	border:none;
+*/
+
+.block-half
+{
+
+	width: 100%;
+	float: left;
+	background: #fff;
+	vertical-align: middle;
+	padding: 5.5em 0;
 }
 
-	textarea{
-		min-height:100px;
-		max-height:200px;
-		max-width:100%;
-	}
-	#boton{
-		background: #31384A;
-		color:#fff;
-		padding:20px;
-	}
-	#boton:hover {
-		cursor: pointer;
-	}
+.block-contact
+{
+	
+	float: left;
+	background-color: #fff;
+	width: 100%;
 
+}
+
+.direccion
+{
+	background: url(../img/contact-address-bg2.jpg);
+	text-align: left;
+	color: white;
+	font-size: 2em;
+	width: 100%;
+}
+.direccion h3 
+{
+	/*font-size: 1.85em;*/
+	margin: 0em 1.5em;
+	font-weight: 600;
+	/*text-rendering: optimizeLegibility;
+	line-height: 1.3;*/
+}
+.direccion hr
+{
+	display: block;
+	-webkit-margin-before: 0.5em;
+	-webkit-margin-after: 0.5em;
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;
+	border-style: inset;
+	border-width: 1px;
+	border-width: 1px 0 0;
+	clear: both;
+	
+
+}
+.direccion hr.separador {
+
+	margin: .7em 0;
+	width: 40%;
+	display: block;
+	border: 1px solid #036564;
+	margin-left: 1.8em;
+
+}
+.direccion p 
+{
+	margin-left: 1.8em;
+}
+
+
+ .block-form 
+{
+	background:#E8DDCB; 
+	position: relative;
+	text-align: left;
+	padding: 5.5em ;
+
+}
+.block-form h3 
+{
+	font-size: 1.85em;
+	text-align: center;
+	color: gray;
+}
+.block-form hr 
+{
+	display: block;
+	width: 25%;
+	margin: 1em auto;
+	border: 1px solid #036564;
+}
+#boton 
+{
+	font-size: 110%;
+	margin-top: 1.4em;
+	padding: .4em 2em .23em;
+}
+.btn-dark
+{
+	background-color: #000;
+	border: 1px solid #000;
+	color: #fff !important;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.btn-dark:hover
+{
+	background-color:#036564;
+
+}
+
+
+
+
+
+
+
+.fields input 
+{
+	padding: 3em 1em 0.5em .1em;
+	/*padding: 0.75em 0.1em 0.25em;*/
+	background: transparent;
+	background-color: transparent;
+	height: 50px;
+	width: 45%;
+	border-top: #E8DDCB; 
+	border-left: #E8DDCB; 
+	border-right: #E8DDCB;
+	border-bottom: 1px solid #999;
+	border-radius: 0;
+	margin: 0;
+	overflow: visible;
+	line-height: normal;
+
+}
+.fields textarea
+{
+	border-radius: 0;
+	border: 0;
+	border-bottom: 1px solid #999;
+	background-color: transparent;
+	background: transparent;
+	padding: 3em 1em 0.5em .1em;
+	margin: 0;
+
+}
+
+
+
+/***************************
+           IMAGENES
+***************************/
+
+article{
+	padding: 100px;
+}
 
 
 
@@ -155,58 +323,97 @@ footer{
 	color:#fff;
 	position: fixed;
 	bottom: -1px;
-	background-color: #6B6B6B;
+	background-color:#036564;
 	width: 100%;
-	height: 405px;
+	height: 400px;
 	z-index: -100;
 	text-align: center;
+	font-size: 18px;
 
 }
+footer ul li
+{
+	display: inline-block;
+	text-align: left;
+	padding: 0px, -15px;
+	padding-right: 40px;
+	padding-top: 30px;
+
+
+
+}
+footer ul li .imagenes 
+{
+	width: 60px;
+	margin-left: 20px;
+
+
+}
+footer ul li h1
+{
+	color:#E8DDCB;
+
+	margin-top: -45px;
+	margin-left: 80px;
+
+}
+footer ul li p
+{
+	color:#E8DDCB;
+	margin-left: 80px;
+
+}
+footer #edintegral ul li h3 
+{
+	text-align: left;
+	
+	padding-right: 620px;
+}
+
+
+footer #edintegral ul li .logo
+
+{
+	width: 35px;
+	margin-right: -35px;
+
+
+}
+*::selection {
+background: #036564;
+color: white;
+text-shadow: none;
+}
+
+
 
 
 
 /******************************
 			JQUERY
 ******************************/
+@media screen and (min-width: 54em){
+.block-half {
+width: 50% !important;
+display: table-cell !important;
+/*padding: 8% 0;*/
+}
 
-
-
-
+@media screen and (min-width: 54em){
+.contact .block-half {
+padding: 5%;
+}
+}
 
 
 @media screen and (max-width: 480px){
-		form{
-			width:100%;
-		}
+	
 }
 
 
-@media screen and (min-width: 660px){
-/**********************************
-TWO COLUMN LAYOUT
-***********************************/
+@media screen and (max-width: 864px){
+	
+	#section1, #section2, #section3, #section4{
+	width: 100%;
+	} 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
