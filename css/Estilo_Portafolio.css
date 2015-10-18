@@ -16,7 +16,10 @@ h1{
 {
 	height: 500px;
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> ff23ff904ed1d90c58ddb6d8f3f022bbcb335ee4
 }
 .fondoP{
 	position: relative;
@@ -31,7 +34,11 @@ h1{
 	height: 300px;
 	top: 170px;
 	position: absolute;
+<<<<<<< HEAD
+	float: center;
+=======
 	float: left;
+>>>>>>> ff23ff904ed1d90c58ddb6d8f3f022bbcb335ee4
 	color: #fff;
 	text-align: center;
 	z-index: -49;
@@ -47,10 +54,16 @@ h1{
 	font-size: 20px;
 }
 
+<<<<<<< HEAD
+#bienvenidos{
+	display: block;
+	margin-top: 700px;
+=======
 
 
 #bienvenidos{
 	display: block;
+>>>>>>> ff23ff904ed1d90c58ddb6d8f3f022bbcb335ee4
 	padding-top:0px;
 	background-color: #CCCCCC;
 	width: 100%;
@@ -79,6 +92,10 @@ h1{
 	letter-spacing: 2px;
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> ff23ff904ed1d90c58ddb6d8f3f022bbcb335ee4
 			
 
 #cabezera nav

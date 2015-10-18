@@ -210,6 +210,9 @@ video{
 	width: 100%;
 	padding-top: 9%;
 	font-size: 50px;
+	-webkit-transition: font-size 1s;
+	-moz-transition: font-size 1s;
+	-o-transition: font-size 1s;
 	color: #fff;
 	text-align: center;
 	
@@ -219,9 +222,15 @@ video{
 	width: 100%;
 	padding-top: 20px;
 	font-size: 20px;
+	-webkit-transition: font-size 1s;
+	-moz-transition: font-size 1s;
+	-o-transition: font-size 1s;
 	color: #fff;
 	text-align: center;
 } 
+#section1 h2:hover, .section_rgba1 {
+		font-size: 70px;
+	}
 
 .section_rgba1, .section_rgba4 {
 	background-color: rgba(0,50,0,.3);
