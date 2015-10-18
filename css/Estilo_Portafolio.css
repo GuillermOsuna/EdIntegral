@@ -16,6 +16,10 @@ h1{
 {
 	height: 500px;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff23ff904ed1d90c58ddb6d8f3f022bbcb335ee4
 }
 .fondoP{
 	position: relative;
@@ -30,7 +34,11 @@ h1{
 	height: 300px;
 	top: 170px;
 	position: absolute;
+<<<<<<< HEAD
 	float: center;
+=======
+	float: left;
+>>>>>>> ff23ff904ed1d90c58ddb6d8f3f022bbcb335ee4
 	color: #fff;
 	text-align: center;
 	z-index: -49;
@@ -46,9 +54,16 @@ h1{
 	font-size: 20px;
 }
 
+<<<<<<< HEAD
 #bienvenidos{
 	display: block;
 	margin-top: 700px;
+=======
+
+
+#bienvenidos{
+	display: block;
+>>>>>>> ff23ff904ed1d90c58ddb6d8f3f022bbcb335ee4
 	padding-top:0px;
 	background-color: #CCCCCC;
 	width: 100%;
@@ -77,7 +92,10 @@ h1{
 	letter-spacing: 2px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff23ff904ed1d90c58ddb6d8f3f022bbcb335ee4
 			
 
 #cabezera nav
@@ -205,7 +223,7 @@ h1{
  	margin: 0px auto;
  	width: 517px;
  }
-h1{
+.geek h1{
 	color: white;
 	text-align: left;
 	vertical-align: top;
@@ -214,7 +232,7 @@ h1{
 
 }
 
-h1 p
+.geek h1 p
 {
 	
 	padding:6px;
@@ -225,7 +243,7 @@ h1 p
 
 }
 
-h1 p a 
+.geek h1 p a 
 {
 	color: #fff;
 	margin-left: 35px;
@@ -249,11 +267,60 @@ footer{
 	color:#fff;
 	position: fixed;
 	bottom: -1px;
-	background-color: #6B6B6B;
+	background-color:#036564;
 	width: 100%;
 	height: 400px;
 	z-index: -100;
 	text-align: center;
+	font-size: 18px;
+
+}
+footer ul li
+{
+	display: inline-block;
+	text-align: left;
+	padding: 0px, -15px;
+	padding-right: 40px;
+	padding-top: 30px;
+
+
+
+}
+footer ul li .imagenes 
+{
+	width: 60px;
+	margin-left: 20px;
+
+
+}
+footer ul li h1
+{
+	color:#E8DDCB;
+
+	margin-top: -45px;
+	margin-left: 80px;
+
+}
+footer ul li p
+{
+	color:#E8DDCB;
+	margin-left: 80px;
+
+}
+footer #edintegral ul li h3 
+{
+	text-align: left;
+	
+	padding-right: 620px;
+}
+
+
+footer #edintegral ul li .logo
+
+{
+	width: 35px;
+	margin-right: -35px;
+
 
 }
 
