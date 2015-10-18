@@ -3,17 +3,21 @@
 	padding:0px;
 }
 
+
+
 body{
-	font-family:'Open Sans' serif;
+	font-family: "quadon","Helvetica Neue",Helvetica,Arial,sans-serif;
+
 
 }
 header{
 	width: 100%;
 
 }
+
 #back 
 {
-	height: 500px;
+	height: 550px;
 
 }
 .fondoP{
@@ -23,28 +27,6 @@ header{
 	z-index: -50;
 	margin-bottom: -15px;
 }
-
-.inf_back{
-	width: 100%;
-	height: 300px;
-	top: 170px;
-	position: absolute;
-	float: left;
-	color: #fff;
-	text-align: center;
-	z-index: -49;
-	
-}
-
-.inf_back h1{
-	 font-size: 5em;
-    letter-spacing: 0.14em;
-}
-
-.inf_back p{
-	font-size: 20px;
-}
-
 
 #cabezera nav
 {
@@ -105,27 +87,6 @@ header{
 
 }
 
-.inf_back{
-	width: 100%;
-	height: 300px;
-	top: 170px;
-	position: absolute;
-	float: left;
-	color: #fff;
-	text-align: center;
-	z-index: -49;
-	
-}
-
-.inf_back h1{
-	 font-size: 5em;
-    letter-spacing: 0.14em;
-}
-
-.inf_back p{
-	font-size: 20px;
-}
-
 .navi
 {
 	font-size: 23px;
@@ -150,72 +111,112 @@ header{
 
 
 
-#bienvenidos{
+section .contact .block-half
+{
+	display: block;
 
-	padding-top:0px;
-	height: 100%;
+}
+div
+{
+	display: block;
+}
+.block-half
+{
 	text-align: left;
 	width: 100%;
-	height: 255px;
-
-
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	/*padding: 5.5em 0;*/
 }
 
-#bienvenidos .nosotros {
-
-	display: inline-block;
-	vertical-align: top;
-	width: 50%;
-	height: 50%;
-	margin: 0px;
-	padding: 0px;
-	float: left;
-
-}
-
-#bienvenidos .nosotros .dif
+.block-contact
 {
-	background-color: #CCC;
+
+	width: 100%;
+	float: left;
+	background-color: #fff;
+}
+.direccion
+{
+	background: url(../img/contact-address-bg2.jpg);
+	text-align: left;
+	color: white;
+	font-size: 2em;
+}
+h3 
+{
+	/*font-size: 1.85em;*/
+	margin: 1em 0 .5em;
+	font-weight: 600;
+	text-rendering: optimizeLegibility;
+	line-height: 1.3;
+}
+hr
+{
+	display: block;
+	-webkit-margin-before: 0.5em;
+	-webkit-margin-after: 0.5em;
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+hr.separador {
+margin: .7em 0;
+width: 40%;
+display: block;
+border: 1px solid #c5a47e;
 
 }
 
-
-#bienvenidos .nosotros h1{
-	padding-top: 5%;
-	font-size: 35px;
-	letter-spacing: 1px;
-	margin-left: 20px;
-	
+.block-form
+{
+	background-color: #E8DDCB;
+	position: relative;
 }
 
 
-#bienvenidos .nosotros p{
-	padding-bottom: 5%;
-	margin-top: -10px;
-	font-size: 20px;
-	letter-spacing: 2px;
-	margin-left: 20px;
-
-
-
+.block.form .fields input 
+{
+	padding: 0.75em 0.1em 0.25em;
+	background: transparent;
+	width: 40%;
+	height: 50px;
+	text-align: baseline;
+	border-top: #afb3b8;
+	border-left: #afb3b8;
+	border-right: #afb3b8;
 }
 
-#profile{
-	
-	padding-top:0px;
+
+
+
+
+#profile {
+	 overflow-y: hidden;
+	background: url(https://www.google.com.mx/maps/place/Av+Dr+Ruperto+Paliza+698,+Guadalupe,+Culiac%C3%A1n+Rosales,+Sin./@24.7968342,-107.3948427,17z/data=!3m1!4b1!4m2!3m1!1s0x86bcd0b6c3d5d037:0x6c2d875e081630e7)  no-repeat;
+	margin-top:-50px;
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	background: url(../img/achitect2.jpg) no-repeat;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	margin-bottom: 395px;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+ 	margin-bottom: 350px;
+
+ 
 }
+
+
+
+
+
+/*
 #profile .descripcion
 {
-	padding-top: 5%;
+	padding-top: 25%;
 	padding-bottom: 15%;
 	padding-right: -50px;
 	margin-left: 135px;
@@ -242,7 +243,7 @@ header{
 	margin-left:-65px;
 	color: white;
 
-}
+}*/
 
 /***************************
            IMAGENES
@@ -251,6 +252,7 @@ header{
 article{
 	padding: 100px;
 }
+
 
 
 /******************************
@@ -317,9 +319,31 @@ footer #edintegral ul li .logo
 
 }
 
+
+
+
+
 /******************************
 			JQUERY
 ******************************/
+@media screen and (min-width: 54em){
+.block-half {
+width: 50% !important;
+display: table-cell !important;
+padding: 8% 0;
+}
+
+@media screen and (min-width: 54em){
+.contact .block-half {
+padding: 5%;
+}
+}
+
+@media screen and (min-width: 54em){
+.contact .block-half {
+padding: 5%;
+}}
+
 
 @media screen and (max-width: 480px){
 	
