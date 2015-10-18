@@ -11,6 +11,11 @@ header{
 	width: 100%;
 
 }
+#back 
+{
+	height: 500px;
+
+}
 .fondoP{
 	position: relative;
 	width: 100%;
@@ -38,7 +43,7 @@ header{
 
 #cabezera nav .logo
 {
-	width: 35px;
+	width: 27px;
 	padding-left: 10px;
 	margin-top: 3px;
 	margin-bottom: -55px;
@@ -108,6 +113,7 @@ header{
 	height: 100%;
 	text-align: left;
 	width: 100%;
+	height: 255px;
 
 
 }
@@ -159,9 +165,10 @@ header{
 	text-align: center;
 	background: url(../img/achitect2.jpg) no-repeat;
 	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	margin-bottom: 395px;
 }
 #profile .descripcion
 {
@@ -202,22 +209,6 @@ article{
 	padding: 100px;
 }
 
-#efecto_fondo{
-	width: 100%;
-	height: 200px;
-	background-color: rgba(0, 255, 255, 0.3);
-	z-index: -99;
-		
-}
-
-#vacio{
-	width: 100%;
-	height: 200px;
-	background-color: black;
-	/*background-color: rgba(0, 0, 255, 0.3);*/
-	z-index: -99;
-	opacity: .3;	
-}
 
 /******************************
 			FOOTER
@@ -226,11 +217,60 @@ footer{
 	color:#fff;
 	position: fixed;
 	bottom: -1px;
-	background-color: #6B6B6B;
+	background-color:#036564;
 	width: 100%;
-	height: 405px;
+	height: 400px;
 	z-index: -100;
 	text-align: center;
+	font-size: 18px;
+
+}
+footer ul li
+{
+	display: inline-block;
+	text-align: left;
+	padding: 0px, -15px;
+	padding-right: 40px;
+	padding-top: 30px;
+
+
+
+}
+footer ul li .imagenes 
+{
+	width: 60px;
+	margin-left: 20px;
+
+
+}
+footer ul li h1
+{
+	color:#E8DDCB;
+
+	margin-top: -45px;
+	margin-left: 80px;
+
+}
+footer ul li p
+{
+	color:#E8DDCB;
+	margin-left: 80px;
+
+}
+footer #edintegral ul li h3 
+{
+	text-align: left;
+	
+	padding-right: 620px;
+}
+
+
+footer #edintegral ul li .logo
+
+{
+	width: 35px;
+	margin-right: -35px;
+
 
 }
 
