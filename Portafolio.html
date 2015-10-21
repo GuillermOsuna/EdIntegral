@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+		$('section[data-type="parallax_section"]').each(function(){
+			var $bgobj= $(this);
+			$(window).scroll(function(){
+				$window = $(widnow);
+				var yPos = -($widnows.scrollTop / $bgobj.data('speed'));
+				var coords = '50%' + yPos + 'px';
+
+
+				$bgobj.css({backgroundPosition: coords});
+			});
+		});
+	});
+
+	</script>
+
+
+	<script>
+	$(document).scroll(function() {
+  var dHeight = $(this).height()-$(window).height();
+  if (dHeight >= $(this).scrollTop()) {
+  $('nav').css('background', 'rgba(51, 51, 51,' + $(this).scrollTop() / $(window).height() + ')');
+  }
+});
+	</script>
+	
+	<title>
+		
+	</title>
+	
+	<link rel="stylesheet" href="css/Estilo_Portafolio.css">
+</head>
+
+
+<body>
+	<div id="cabezera" >
+	<nav >
+		<div>
+			<img src="img/logointegral2.png" class="logo">
+		</div>
+
+		<div class ="navi">
+		        <span style="transition-delay: 0.01s;">E</span>
+		        <span style="transition-delay: 0.05s;">D</span>
+		        <span style="transition-delay: 0.9s;">I</span>
+		        <span style="transition-delay: 0.13s;">F</span>
+		        <span style="transition-delay: 0.17s;">I</span>
+		        <span style="transition-delay: 0.21s;">C</span>
+		        <span style="transition-delay: 0.25s;">A</span>
+		        <span style="transition-delay: 0.29s;">C</span>
+		        <span style="transition-delay: 0.34s;">I</span>  
+		        <span style="transition-delay: 0.39s;">O</span> 
+		        <span style="transition-delay: 0.43s;">N</span>
+		        <br>
+
+		        <span style="transition-delay: 0.47s;">I</span>
+		        <span style="transition-delay: 0.51s;">N</span>
+		        <span style="transition-delay: 0.55s;">T</span>
+		        <span style="transition-delay: 0.59s;">E</span>
+		        <span style="transition-delay: 0.63s;">G</span>
+		        <span style="transition-delay: 0.67s;">R</span>
+		        <span style="transition-delay: 0.71s;">A</span>
+		        <span style="transition-delay: 0.75s;">L</span>
+		</div>
+		
+		<ul>
+
+			<li>
+				<a href ="contacto.html">Contacto</a>
+			</li>
+			<li>
+				<a href ="portafolio.html">Portafolio</a>
+			</li>
+			<li>
+				<a>Servicios</a>
+			</li>
+			<li>
+				<a >Eventos</a>
+			</li>
+			<li>
+				<a href ="nosotros.html">Nosotros</a>
+			</li>
+			<li>
+				<a href ="index.html">Inicio</a>
+			</li>
+		</ul>
+	</nav>
+	</div>
+</header>
+
+		<div id="back" >
+			<img src="img/sketch copia.jpg" class="fondoP">
+		
+		</div>
+		<div  data-stellar-ratio=".4" class="inf_back">
+			<h1>
+				PORTAFOLIO
+			</h1>
+
+			<p>
+				Aqui debe decir algo del portafolio.
+			</p>
+			
+			</div>
+
+			<section id="bienvenidos">
+		<h1>Algo aqui</h1>
+			<p id="guion">__________________</p>
+			
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia minima doloribus sequi quidem similique nostrum error, quasi vel quo. Quidem consequuntur eius voluptatem, consectetur corrupti cumque rem sint autem.
+			</p>
+	</section>
+				
+
+
+	
+
+	<section id="Home" data-type="parallax_section" data-speed="10">
+		<article>
+			<div class="geek">
+				<h1>
+					<p >
+					Proyecto: Edificio coorporativo integral <p>
+					Guadalajara,Mexico <p>
+				    2014 <a href="">Ver mas...</a>	
+					</p>
+					
+				</h1>
+			</div>
+		</article>
+	</section>
+	
+	<section id="section2" data-type="parallax_section" data-speed="10">
+		<article>
+			<div class="geek">
+				<h1>
+					<p>
+					Proyecto: Puente AB <p>
+					somewhere, el mundo <p>
+					2010.  <a href="">Ver mas...</a>
+				   </p>
+					
+				</h1>
+			</div>
+		</article>
+	</section>
+	<section id="section3" data-type="parallax_section" data-speed="10">
+		<article>
+			<div class="geek">
+				<h1>
+					<p >
+					Proyecto: Escuela Privada <p>
+					somewhere, el mundo <p>
+					2005. <a href="">Ver mas...</a>
+					</p>
+					
+				</h1>
+			</div>
+		</article>
+	</section>
+	<section id="section4" data-type="parallax_section" data-speed="10">
+		<article>
+			<div class="geek">
+				<h1>
+					<p >
+					Proyecto: Ethiad <p>
+					From very, far away <p>
+					2005. <a href="">Ver mas...</a>
+						
+					</p>
+					
+				</h1>
+			</div>
+		</article>
+	</section>
+	<section id="section5" data-type="parallax_section" data-speed="10">
+		<article>
+			<div class="geek">
+				<h1 >
+					<p >
+						Proyecto: Libreria publica <p>
+					seattle, washington <p>
+					1997. <a href="">Ver mas...</a>
+					</p>
+					
+				</h1>
+			</div>
+		</article>
+	</section>
+
+	<section id="vacio">
+		
+	</section>
+
+
+	<footer >
+	
+		<footer >
+		<ul>
+			<li>
+				<img src="img/mes.png" class="imagenes">
+				<h1>Necesitas ayuda?</h1>
+				<p>
+					mariobet001@gmail.com
+				</p>
+			</li>
+			<li>
+
+				<img src="img/telefono2.png" class="imagenes">
+				<h1>Llamanos</h1>
+				<p>(6677) 15-31-11/(6671)99-85-41 </p>
+
+				
+			</li>
+			<li>
+				<img src="img/pinpoint3.png" class="imagenes" >
+				<h1>Encuentranos</h1>
+				<p>Ruperto L. Paliza 698 -G / Cln, Sin </p>
+			</li>
+		</ul>
+	
+
+		<div id= "edintegral">
+			<ul>
+				<li> <h3> Edificacion integral&copy; </h3> 
+
+				 </li>
+
+				<li><img src="img/f.png" class="logo" </li>
+				<li><img src="img/tw.png" class="logo"  </li>
+				<li><img src="img/in.png" class="logo" </li>
+				
+			</ul>
+			
+
+		</div>
+	</footer>
+
+</body>
+
+</html>
