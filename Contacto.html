@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Edificacion Integral | Diseño, Calidad</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
@@ -13,27 +15,37 @@
      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVlmotM9z5kA8aqq7vUbzQ1PK-6F5RT9s&callback=initMap">
+    </script>
     <link rel="stylesheet" href="css/estilo_contacto.css">
+
 	<script src="stellar.js"></script>
 	
+
+	<script>
+		$(function(){
+		$(window).stellar();
+		$('#profile').css({
+			'height':screen.availHeight +'px'
+		});
+	});
+	</script>
+
+
+
+
 	<script>
 	$(document).scroll(function() {
   var dHeight = $(this).height()-$(window).height();
   if (dHeight >= $(this).scrollTop()) {
-  $('nav').css('background', 'rgba(51, 51, 51,1)');
+  $('nav').css('background', 'rgba(51, 51, 51,' + $(this).scrollTop() / $(window).height() + ')');
   }
 });
 	</script>
 
 
-	<script>
-		$(function(){
-		$(window).stellar();
-		$('#video_back').css({
-			'height':screen.availHeight +'px'
-		});
-	});
-	</script>
+
 
 </head>
 
@@ -42,7 +54,7 @@
 	<div id="cabezera" >
 	<nav >
 		<div>
-			<img src="img/logointegral2.png" class="logo">
+			<a href="index.html"><img src="img/logointegral2.png" class="logo"></a>
 		</div>
 
 		<div class ="navi">
@@ -59,14 +71,15 @@
 		        <span style="transition-delay: 0.53s;">N</span>
 		        <br>
 
-		        <span style="transition-delay: 0.58s;">I</span>
-		        <span style="transition-delay: 0.63s;">N</span>
-		        <span style="transition-delay: 0.68s;">T</span>
-		        <span style="transition-delay: 0.73s;">E</span>
-		        <span style="transition-delay: 0.78s;">G</span>
-		        <span style="transition-delay: 0.83s;">R</span>
-		        <span style="transition-delay: 0.88s;">A</span>
-		        <span style="transition-delay: 0.93s;">L</span>
+		        <span style="transition-delay: 0.01s;">I</span>
+		        <span style="transition-delay: 0.08s;">N</span>
+		        <span style="transition-delay: 0.13s;">T</span>
+		        <span style="transition-delay: 0.18s;">E</span>
+		        <span style="transition-delay: 0.23s;">G</span>
+		        <span style="transition-delay: 0.28s;">R</span>
+		        <span style="transition-delay: 0.33s;">A</span>
+		        <span style="transition-delay: 0.38s;">L</span>
+		        
 		</div>
 		
 		<ul>
@@ -87,55 +100,147 @@
 				<a href ="portafolio.html">Portafolio</a>
 			</li>
 			<li>
-				<a href ="contacto.html">Contacto</a>
+				<a href ="contacto.html"> Contacto</a>
 			</li>
 		</ul>
 	</nav>
 	</div>
 </header>
-
-
-	<section id="imag" 
-	style=" margin-bottom: 400px; height: 710px; background-color: transparent;">
+	
+	
+		<div id="back" >
+			<img src="img/trato copia.jpg" class="fondoP">
 		
-		
+		</div>
+		<div  data-stellar-ratio=".5" class="inf_back">
+			<h1>
+				CONTACTANOS
+			</h1>
 
+			<p>
+				Tienes algun proyecto en mente? <br> Llamanos, envianos un mensaje, 
+				o visitanos.
+			</p>
+			
+			</div>
+
+		<section class ="contact">
+			<div ="block-half"> 
+
+			<div class="block-contact" >
+				<div class ="direccion">
+					<div>
+						<h3>Edificacion integral</h3>
+						<hr class="separador">
+						<p>
+							Ruperto L. Paliza 698 -G
+							<br> <br>
+							Culiacan, Sinaloa
+							<br><br>
+							mariobet001@gmail.com
+							<br><br>
+							(6677) 15-31-11 & (6671)99-85-41
+						</p>
+					</div>
+					
+				</div>
+				<div class= "block-form">
+					<div class="datos">
+						<h3>Envianos un mensaje</h3>
+						<hr class="sep">
 			<form action="enviar.php" method="post">
-				<h2>CONTACTO</h2>
-				<input type="text" name="nombre" placeholder="nombre" required>
-				<input type="text" name="correo" placeholder="correo" required>
-				<input type="text" name="asunto" placeholder="asunto" required>
-				<textarea name="mensaje" placeholder="escriba aqui su mensaje" id="" cols="30" rows="10"></textarea>
-				<input type="submit" value="ENVIAR" id="boton">
+				
+				<span class="fields"><input type="text" name="nombre" placeholder="Nombre" required>  </span>
+				<span class="fields"><input type="text" name="correo" placeholder="Apellido" required><br> </span> <br>
+				<span class="fields"> <input type="text" name="asunto" placeholder="Correo electronico" required> </span>
+				<span class="fields"><input type="text" name="asunto" placeholder="Telefono" required>  </span> <br>
+				
+				<span class="fields"> <br> <textarea name="mensaje" placeholder="Escriba aqui su mensaje" id="" cols="62" rows="2"></textarea></span> <br> <br>
+				
+				<input type="submit" value="ENVIAR" id="boton" class="btn-dark">
 			</form>
 
+						
+					</div>
+
+				
+					
+				</div>
+				
+			</div>
+		</div>	
+		</section>
+
+			
+	
+<section id ="mapa">
+	<div>
+		
+   <h1>Simple Map<h1>
+
+    <script>
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVlmotM9z5kA8aqq7vUbzQ1PK-6F5RT9s&callback=initMap"
+        async defer></script>
+
+
+	</div>
+</section>
 
 
 
-	</section>
 
 	
 
 	
-	<footer >
-	
-		<h1>
-				FOOTER
-		</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsam fuga itaque id, sapiente voluptate dignissimos iusto voluptatibus, ratione necessitatibus, reprehenderit. Aspernatur ullam, quod totam voluptatem, eaque repudiandae ipsam dolor.
-
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aspernatur, eveniet, laboriosam minima distinctio soluta vel! Velit delectus, nihil perferendis quasi pariatur earum natus hic possimus. Saepe quis necessitatibus reprehenderit!
-
-		</p>
-	</footer>
 </body>
+<footer >
+		<ul>
+			<li>
+				<img src="img/mes.png" class="imagenes">
+				<h1>Necesitas ayuda?</h1>
+				<p>
+					mariobet001@gmail.com
+				</p>
+			</li>
+			<li>
+
+				<img src="img/telefono2.png" class="imagenes">
+				<h1>Llamanos</h1>
+				<p>(6677) 15-31-11/(6671)99-85-41 </p>
+
+				
+			</li>
+			<li>
+				<img src="img/pinpoint3.png" class="imagenes" >
+				<h1>Encuentranos</h1>
+				<p>Ruperto L. Paliza 698 -G / Cln, Sin </p>
+			</li>
+		</ul>
+	
+
+		<div id= "edintegral">
+			<ul>
+				<li> <h3> Edificacion integral&copy; </h3> 
+
+				 </li>
+
+				<li><img src="img/f.png" class="logo" </li>
+				<li><img src="img/tw.png" class="logo"  </li>
+				<li><img src="img/in.png" class="logo" </li>
+				
+			</ul>
+			
+
+		</div>
+	</footer>
 </html>
-
-
-
-
-
-
-
-
-
