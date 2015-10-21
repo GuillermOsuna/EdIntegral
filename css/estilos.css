@@ -77,6 +77,9 @@ video{
 	padding-left: 15px;
 	display: block;
 	text-decoration: none;
+	-webkit-transition: color 2s;
+	-moz-transition: color 2s;
+	-o-transition: color 2s;
 
 	&::after{
 		content: '';
@@ -91,13 +94,7 @@ video{
 		transition: all .3s ease-in;
 
 	}
-	
-	&:hover{
-		&::after{
-			transform: scaleX(1);
-			visibility: visible;
-		}
-	}	
+		
 }
 
 
@@ -164,7 +161,7 @@ video{
 	display: block;
 	margin-top: 700px;
 	padding-top:0px;
-	background-color: #FFF;
+	background-color: #fff;
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -404,7 +401,7 @@ footer #edintegral ul li .logo
 	width: 100%;
 	height: 100%;
 	left: 100%;
-	background-color:#036564;
+	background-color: rgba(255,255,255,1);
 	z-index: 2000;
 }
 #nav2{
@@ -423,22 +420,22 @@ footer #edintegral ul li .logo
 	
 }
 #menu2 #nav2 ul li a {
-	color: #fff;	
+	color: rgba(99,56,0,1);	
 	text-align:center;
 	padding: 20px;
 	display: block;
 	float:none;
-	border-bottom:1px solid rgba(255,255,255,.3);
+	border-bottom:1px solid rgba(0,0,0,.5);
 	text-decoration: none;
 }
 #menu2 #nav2 ul li .btn-inicio{
-	border-top:1px solid rgba(255,255,255,.3);
+	border-top:1px solid rgba(0,0,0,.5);
 }
 /*#nav2 ul li span {
 	margin-right: 10px; Por si agregamos iconos al menu
 }*/
 #menu2 #nav2 ul li a:hover{
-	background:#037E8C;
+	background:rgba(240,240,240,1);;
 }
 
 
@@ -461,17 +458,13 @@ footer #edintegral ul li .logo
 		display: block;
 		width: 100%;
 		height: 73px;
-		background: #ccc;
 	}
 	.menu_bar .bt-menu{
 		display:block;
 		padding:20px;
-		background: #036564;
+		background-color: rgba(255,255,255,1);
 		height: 73px;
-		color:#fff;
-		text-decoration: none;
-		font-weight: bold;
-		font-size: 25px;
+		color: rgba(50,50,50,1);
 		-webkit-box-sizing:border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
@@ -479,7 +472,7 @@ footer #edintegral ul li .logo
 	.menu_bar span{
 		float:right;
 		font-size: 40px;
-
+		
 	}
 
 .inf_back h1{
@@ -504,7 +497,6 @@ footer #edintegral ul li .logo
 	margin-bottom: 395px;
 
 }	
-	
 }
 
 @media screen and (max-width: 480px){
