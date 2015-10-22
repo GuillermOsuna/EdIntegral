@@ -1,7 +1,7 @@
 $(document).ready(main);
 
 var contador=1;
-
+var dHeight = $(this).height()-$(window).height();
 function main(){
 	$('.menu_bar').click(function(){
 		//$('nav').toggle()
@@ -14,6 +14,7 @@ function main(){
 		}else
 		{
 			$('#menu2').animate({
+					
 				left:'100%'
 			});
 			contador=1;

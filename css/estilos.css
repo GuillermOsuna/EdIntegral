@@ -1,8 +1,17 @@
 *{
 	margin:0px;
 	padding:0px;
+
+}
+*::-moz-selection{
+   background: rgba(0,0,0,.1);
+   color: #BD3600;
 }
 
+*::selection {
+   background: rgba(0,0,0,.1);
+   color: #BD3600;
+}
 body{
 	font-family: 'Roboto', sans-serif;
 	background-color: gray;
@@ -23,12 +32,6 @@ header{
 }
 video{
 	min-width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size: cover;
-
-	
 }
 
 #cabezera nav
@@ -138,13 +141,15 @@ video{
 
 .inf_back{
 	width: 100%;
-	height: 300px;
-	top: 300px;
+	height: 700px;
+	padding-top: 250px;
+	top: 0px;
 	position: absolute;
 	float: left;
 	color: #fff;
 	text-align: center;
 	z-index: -49;
+	background-color: rgba(0,0,0,.5);
 	
 }
 
@@ -160,12 +165,29 @@ video{
 #bienvenidos{
 	display: block;
 	margin-top: 700px;
-	padding-top:0px;
+	padding:0;
 	background-color: #fff;
 	width: 100%;
-	height: 100%;
+	height: 500px;
+	overflow: hidden;
 	text-align: center;
 }
+#arrow_left, #arrow_right{
+	position:absolute;
+	height: 500px;
+	-webkit-transition: width 2s;
+	-moz-transition: width 2s;
+	-o-transition: width 2s;
+}
+#arrow_left{
+	left:0%;
+	
+}
+#arrow_right{
+	right:0%;
+
+}
+
 
 #bienvenidos h1{
 	padding-top: 9%;
@@ -175,19 +197,25 @@ video{
 
 	
 }
-
-#bienvenidos #guion{
-	letter-spacing: 0px;
-	padding-top: 65px;
-	color:#AA6A3D;
-	/*opacity: .3;*/
-}
-
 #bienvenidos p{
 	padding-bottom: 9%;
-	margin-top: -70px;
+	margin-top: 40px;
 	font-size: 20px;
 	letter-spacing: 2px;
+}
+#bienvenidos #guion{
+	position: absolute;
+	letter-spacing: 0px;
+	color:#AA6A3D;
+	font-size: 20px;
+	/*-ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg); 
+    transform: rotate(90deg);*/
+	-webkit-transition: font-size 1s;
+	-moz-transition: font-size 1s;
+	-o-transition: font-size 1s;
+
+
 }
 
 
@@ -231,7 +259,7 @@ video{
 	position:relative;
 	width: 100%;
 	height:auto;
-	padding-top: 70px;
+	padding-top: 5%;
 	font-size: 50px;
 	-webkit-transition: font-size 1s;
 	-moz-transition: font-size 1s;
@@ -243,7 +271,7 @@ video{
 	#section1 p, #section2 p, #section3 p, #section4 p{
 	position:relative;
 	width: 100%;
-	height:200px;
+	height:auto;
 	padding-top: 20px;
 	font-size: 25px;
 	-webkit-transition: font-size 1s;
@@ -274,9 +302,12 @@ video{
 	-o-transition: background-color 1s;
 	
 }
-.section_rgba1:hover, .section_rgba4:hover {
+.section_rgba1:hover{
 	background-color: rgba(99,56,0,.93);
 }
+.section_rgba4:hover {
+	background-color: rgba(120,34,0,.93);	
+	}
 .section_rgba2:hover{
 	background-color: rgba(55,168,167,.93);
 }
@@ -303,9 +334,10 @@ video{
 	margin:0px auto;
 	width: 100%;
 	height: 20%;
-	margin-bottom: 398px;
+	margin-bottom: 298px;
 	position: relative;
 	width: 100%;
+	overflow: hidden;
 	-webkit-background-size: cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
@@ -318,7 +350,16 @@ video{
  	/*margin-bottom: 395px;*/
  }
 
-
+#prueba1 h1{
+	font-size:30px;
+	font-weight: 900px;
+	text-align: center;
+	padding: 50px;
+	padding-left: 20%;
+	padding-right: 20%;
+	color:rgba(255,255,255,1);
+	background-color: rgba(99,56,0,.80);
+	}
 
 
 /******************************
@@ -330,7 +371,7 @@ footer{
 	bottom: -1px;
 	background-color:#333332;
 	width: 100%;
-	height: 400px;
+	height: 300px;
 	z-index: -100;
 	text-align: center;
 	font-size: 18px;
@@ -356,7 +397,7 @@ footer ul li .imagenes
 }
 footer ul li h1
 {
-	color:#E8DDCB;
+	color:#FFF;
 
 	margin-top: -45px;
 	margin-left: 80px;
@@ -364,7 +405,7 @@ footer ul li h1
 }
 footer ul li p
 {
-	color:#E8DDCB;
+	color:#fff;
 	margin-left: 80px;
 
 }
@@ -496,8 +537,7 @@ footer #edintegral ul li .logo
 	background-size: cover;
 	margin-bottom: 395px;
 
-}	
-}
+}}
 
 @media screen and (max-width: 480px){
 	.inf_back h1{
