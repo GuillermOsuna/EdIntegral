@@ -4,97 +4,111 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Edificacion Integral | Diseño, Calidad</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-     
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
+     <link rel="stylesheet" href="fonts.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVlmotM9z5kA8aqq7vUbzQ1PK-6F5RT9s&callback=initMap">
-    </script>
     <link rel="stylesheet" href="css/estilo_contacto.css">
-
-	<script src="stellar.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/nav_resto.js"></script>
 	
-
 	<script>
 		$(function(){
 		$(window).stellar();
-		$('#profile').css({
+		$('#back').css({
 			'height':screen.availHeight +'px'
 		});
 	});
 	</script>
 
-
-
-
-	<script>
-	$(document).scroll(function() {
-  var dHeight = $(this).height()-$(window).height();
-  if (dHeight >= $(this).scrollTop()) {
-  $('nav').css('background', 'rgba(51, 51, 51,' + $(this).scrollTop() / $(window).height() + ')');
-  }
-});
-	</script>
-
-
-
-
 </head>
 
 <body>
-<header  >
+
+<header>
 	<div id="cabezera" >
-	<nav >
-		<div>
+	<nav>
+		<div class="div_logo">
 			<a href="index.html"><img src="img/logointegral2.png" class="logo"></a>
 		</div>
 
 		<div class ="navi">
 		        <span style="transition-delay: 0.01s;">E</span>
-		        <span style="transition-delay: 0.08s;">D</span>
-		        <span style="transition-delay: 0.13s;">I</span>
-		        <span style="transition-delay: 0.18s;">F</span>
-		        <span style="transition-delay: 0.23s;">I</span>
-		        <span style="transition-delay: 0.28s;">C</span>
-		        <span style="transition-delay: 0.33s;">A</span>
-		        <span style="transition-delay: 0.38s;">C</span>
-		        <span style="transition-delay: 0.43s;">I</span>  
-		        <span style="transition-delay: 0.48s;">O</span> 
-		        <span style="transition-delay: 0.53s;">N</span>
+		        <span style="transition-delay: 0.07s;">D</span>
+		        <span style="transition-delay: 0.12s;">I</span>
+		        <span style="transition-delay: 0.17s;">F</span>
+		        <span style="transition-delay: 0.22s;">I</span>
+		        <span style="transition-delay: 0.27s;">C</span>
+		        <span style="transition-delay: 0.32s;">A</span>
+		        <span style="transition-delay: 0.37s;">C</span>
+		        <span style="transition-delay: 0.42s;">I</span>  
+		        <span style="transition-delay: 0.47s;">O</span> 
+		        <span style="transition-delay: 0.52s;">N</span>
 		        <br>
 
 		        <span style="transition-delay: 0.01s;">I</span>
-		        <span style="transition-delay: 0.08s;">N</span>
-		        <span style="transition-delay: 0.13s;">T</span>
-		        <span style="transition-delay: 0.18s;">E</span>
-		        <span style="transition-delay: 0.23s;">G</span>
-		        <span style="transition-delay: 0.28s;">R</span>
-		        <span style="transition-delay: 0.33s;">A</span>
-		        <span style="transition-delay: 0.38s;">L</span>
+		        <span style="transition-delay: 0.07s;">N</span>
+		        <span style="transition-delay: 0.12s;">T</span>
+		        <span style="transition-delay: 0.17s;">E</span>
+		        <span style="transition-delay: 0.22s;">G</span>
+		        <span style="transition-delay: 0.27s;">R</span>
+		        <span style="transition-delay: 0.32s;">A</span>
+		        <span style="transition-delay: 0.37s;">L</span>
 		        
+		</div>
+
+
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span></a>
 		</div>
 		
 		<ul>
 
 			<li>
-				<a href ="index.html">Inicio</a>
+				<a href ="index.html" id="1">Inicio</a>
+			</li>
+			<li>
+				<a href ="nosotros.html"id="2">Nosotros</a>
+			</li>
+			<li>
+				<a href="Eventos.html" id="3">Eventos</a>
+			</li>
+			<li>
+				<a href="Servicios.html" id="4">Servicios</a>
+			</li>
+			<li>
+				<a href ="portafolio.html" id="5">Portafolio</a>
+			</li>
+			<li>
+				<a href ="contacto.html" id="6"> Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	</div>
+	
+</header>
+	<section id="menu2">
+		<div id="nav2">
+			<ul>
+			<li>
+				<a href ="index.html" class="btn-inicio">Inicio</a>
 			</li>
 			<li>
 				<a href ="nosotros.html">Nosotros</a>
 			</li>
 			<li>
-				<a>Eventos</a>
+				<a href="Eventos.html">Eventos</a>
 			</li>
 			<li>
-				<a>Servicios</a>
+				<a href="Servicios.html">Servicios</a>
 			</li>
 			<li>
 				<a href ="portafolio.html">Portafolio</a>
@@ -103,98 +117,106 @@
 				<a href ="contacto.html"> Contacto</a>
 			</li>
 		</ul>
-	</nav>
-	</div>
-</header>
-	
+		</div>
+	</section>	
 	
 		<div id="back" >
-			<img src="img/trato copia.jpg" class="fondoP">
-		
+		<!--<img src="img/office.jpg" alt="" id="back_image">-->
 		</div>
+
 		<div  data-stellar-ratio=".5" class="inf_back">
 			<h1>
-				CONTACTANOS
+				CONTACTO
 			</h1>
 
 			<p>
-				Tienes algun proyecto en mente? <br> Llamanos, envianos un mensaje, 
-				o visitanos.
+				Diseñando lo mejor desde 1993.
 			</p>
-			
 			</div>
+	
+
+
+<!--CODIGO NUEVO-->
 
 		<section class ="contact">
-			<div ="block-half"> 
 
-			<div class="block-contact" >
-				<div class ="direccion">
-					<div>
-						<h3>Edificacion integral</h3>
-						<hr class="separador">
-						<p>
-							Ruperto L. Paliza 698 -G
-							<br> <br>
-							Culiacan, Sinaloa
-							<br><br>
-							mariobet001@gmail.com
-							<br><br>
-							(6677) 15-31-11 & (6671)99-85-41
-						</p>
-					</div>
-					
-				</div>
-				<div class= "block-form">
-					<div class="datos">
-						<h3>Envianos un mensaje</h3>
-						<hr class="sep">
-			<form action="enviar.php" method="post">
-				
-				<span class="fields"><input type="text" name="nombre" placeholder="Nombre" required>  </span>
-				<span class="fields"><input type="text" name="correo" placeholder="Apellido" required><br> </span> <br>
-				<span class="fields"> <input type="text" name="asunto" placeholder="Correo electronico" required> </span>
-				<span class="fields"><input type="text" name="asunto" placeholder="Telefono" required>  </span> <br>
-				
-				<span class="fields"> <br> <textarea name="mensaje" placeholder="Escriba aqui su mensaje" id="" cols="62" rows="2"></textarea></span> <br> <br>
-				
-				<input type="submit" value="ENVIAR" id="boton" class="btn-dark">
-			</form>
+			<div class ="direccion">
+				<h3>Edificacion integral</h3>
+				<hr class="separador">
+				<p>
+					Ruperto L. Paliza 698 -G
+					<br> <br>
+					Culiacan, Sinaloa
+					<br><br>
+					mariobet001@gmail.com
+					<br><br>
+					(6677) 15-31-11 & (6671)99-85-41
+				</p>
+		</div>
 
-						
-					</div>
 
+		<div class="datos">
+			<h3>Envianos un mensaje</h3>
+			<hr class="sep">
+			<form action="enviar.php" method="post">	
+			<span class="fields" id="nom"><input type="text" name="nombre" placeholder="Nombre" required>  </span>
+			<span class="fields" id="appel"><input type="text" name="correo" placeholder="Apellido" required><br> </span> <br>
+			<span class="fields" id="mail"> <input type="text" name="asunto" placeholder="Correo electronico" required> </span>
+			<span class="fields" id="tel"><input type="text" name="asunto" placeholder="Telefono" required>  </span> <br>
 				
-					
-				</div>
+			<span class="fields"> <br> <textarea name="mensaje" placeholder="Escriba aqui su mensaje"cols="62" rows="2"></textarea></span> <br> <br>
 				
-			</div>
-		</div>	
+			<input type="submit" value="ENVIAR" id="boton" class="btn-dark">
+			</form>		
+		</div>
 		</section>
 
 			
-	
-<section id ="mapa">
-	<div>
-		
-   <h1>Simple Map<h1>
 
-    <script>
+<div id ="map">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+		    <script type="text/javascript">
+		    	/*var image= new google.maps.MarkerImage(
+		    			"",
+		    			new google.maps.Size(20,20)
+		    		);*/
 
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
-  });
-}
+				var map;
+				var marker;
+				function init() {
+					var mapOptions={
+						center: new google.maps.LatLng(24.7968683,-107.3937001),
+						zoom: 15,
+						scrollwheel:false,
+						 navigationControl: false,
+						    mapTypeControl: false,
+						    scaleControl: false,
+						    
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+					}
 
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVlmotM9z5kA8aqq7vUbzQ1PK-6F5RT9s&callback=initMap"
-        async defer></script>
+					  map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
+					  var place= new google.maps.LatLng(24.796898,-107.3925104);
+					  marker = new google.maps.Marker({
+					  	position:place,
+					  	title:"Edificacion Integral",
+					  	map: map,
+					  	//icon:image
+					  });
 
+					}
+					init();
+		    </script>
 	</div>
-</section>
+
+		    <script type="text/jacascript">
+		    	$('#map').hover(function() {
+						$(window).scroll();
+			    
+			  });
+
+		    </script>
 
 
 
@@ -203,7 +225,10 @@ function initMap() {
 
 	
 </body>
-<footer >
+<!--ARRIBA VA TODO EL CONTENIDO DE ESTA SECCION, HASTA LA SECCION BIENVENIDOS...-->
+
+
+	<footer>
 		<ul>
 			<li>
 				<img src="img/mes.png" class="imagenes">
@@ -243,4 +268,14 @@ function initMap() {
 
 		</div>
 	</footer>
+</body>
 </html>
+
+
+
+
+
+
+
+
+

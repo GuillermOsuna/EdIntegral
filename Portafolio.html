@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<title>Edificacion Integral | Diseño, Calidad</title>
 
+	<link rel="stylesheet" href="">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
+     <link rel="stylesheet" href="fonts.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/Estilo_Portafolio.css">
+	<script src="js/stellar.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/nav_resto.js"></script>
+	
+	<script>
+		$(function(){
+		$(window).stellar();
+		$('#video_back').css({
+			'height':screen.availHeight +'px'
+		});
+	});
+	</script>
 	<script>
 	$(document).ready(function(){
 		$('section[data-type="parallax_section"]').each(function(){
@@ -22,106 +42,140 @@
 			});
 		});
 	});
-
 	</script>
 
-
-	<script>
-	$(document).scroll(function() {
-  var dHeight = $(this).height()-$(window).height();
-  if (dHeight >= $(this).scrollTop()) {
-  $('nav').css('background', 'rgba(51, 51, 51,' + $(this).scrollTop() / $(window).height() + ')');
-  }
-});
-	</script>
-	
-	<title>
-		
-	</title>
-	
-	<link rel="stylesheet" href="css/Estilo_Portafolio.css">
 </head>
 
-
 <body>
+
+<header>
 	<div id="cabezera" >
-	<nav >
-		<div>
-			<img src="img/logointegral2.png" class="logo">
+	<nav>
+		<div class="div_logo">
+			<a href="index.html"><img src="img/logointegral2.png" class="logo"></a>
 		</div>
 
 		<div class ="navi">
 		        <span style="transition-delay: 0.01s;">E</span>
-		        <span style="transition-delay: 0.05s;">D</span>
-		        <span style="transition-delay: 0.9s;">I</span>
-		        <span style="transition-delay: 0.13s;">F</span>
-		        <span style="transition-delay: 0.17s;">I</span>
-		        <span style="transition-delay: 0.21s;">C</span>
-		        <span style="transition-delay: 0.25s;">A</span>
-		        <span style="transition-delay: 0.29s;">C</span>
-		        <span style="transition-delay: 0.34s;">I</span>  
-		        <span style="transition-delay: 0.39s;">O</span> 
-		        <span style="transition-delay: 0.43s;">N</span>
+		        <span style="transition-delay: 0.07s;">D</span>
+		        <span style="transition-delay: 0.12s;">I</span>
+		        <span style="transition-delay: 0.17s;">F</span>
+		        <span style="transition-delay: 0.22s;">I</span>
+		        <span style="transition-delay: 0.27s;">C</span>
+		        <span style="transition-delay: 0.32s;">A</span>
+		        <span style="transition-delay: 0.37s;">C</span>
+		        <span style="transition-delay: 0.42s;">I</span>  
+		        <span style="transition-delay: 0.47s;">O</span> 
+		        <span style="transition-delay: 0.52s;">N</span>
 		        <br>
 
-		        <span style="transition-delay: 0.47s;">I</span>
-		        <span style="transition-delay: 0.51s;">N</span>
-		        <span style="transition-delay: 0.55s;">T</span>
-		        <span style="transition-delay: 0.59s;">E</span>
-		        <span style="transition-delay: 0.63s;">G</span>
-		        <span style="transition-delay: 0.67s;">R</span>
-		        <span style="transition-delay: 0.71s;">A</span>
-		        <span style="transition-delay: 0.75s;">L</span>
+		        <span style="transition-delay: 0.01s;">I</span>
+		        <span style="transition-delay: 0.07s;">N</span>
+		        <span style="transition-delay: 0.12s;">T</span>
+		        <span style="transition-delay: 0.17s;">E</span>
+		        <span style="transition-delay: 0.22s;">G</span>
+		        <span style="transition-delay: 0.27s;">R</span>
+		        <span style="transition-delay: 0.32s;">A</span>
+		        <span style="transition-delay: 0.37s;">L</span>
+		        
+		</div>
+
+
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span></a>
 		</div>
 		
 		<ul>
 
 			<li>
-				<a href ="contacto.html">Contacto</a>
+				<a href ="index.html" id="1">Inicio</a>
 			</li>
 			<li>
-				<a href ="portafolio.html">Portafolio</a>
+				<a href ="nosotros.html"id="2">Nosotros</a>
 			</li>
 			<li>
-				<a>Servicios</a>
+				<a href="Eventos.html" id="3">Eventos</a>
 			</li>
 			<li>
-				<a >Eventos</a>
+				<a href="Servicios.html" id="4">Servicios</a>
+			</li>
+			<li>
+				<a href ="portafolio.html" id="5">Portafolio</a>
+			</li>
+			<li>
+				<a href ="contacto.html" id="6"> Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	</div>
+	
+</header>
+	<section id="menu2">
+		<div id="nav2">
+			<ul>
+			<li>
+				<a href ="index.html" class="btn-inicio">Inicio</a>
 			</li>
 			<li>
 				<a href ="nosotros.html">Nosotros</a>
 			</li>
 			<li>
-				<a href ="index.html">Inicio</a>
+				<a href="Eventos.html">Eventos</a>
+			</li>
+			<li>
+				<a href="Servicios.html">Servicios</a>
+			</li>
+			<li>
+				<a href ="portafolio.html">Portafolio</a>
+			</li>
+			<li>
+				<a href ="contacto.html"> Contacto</a>
 			</li>
 		</ul>
-	</nav>
-	</div>
-</header>
-
-		<div id="back" >
-			<img src="img/sketch copia.jpg" class="fondoP">
-		
 		</div>
-		<div  data-stellar-ratio=".4" class="inf_back">
+	</section>	
+	
+		<div id="back" >
+		<!--<img src="img/office.jpg" alt="" id="back_image">-->
+		</div>
+
+		<div  data-stellar-ratio=".5" class="inf_back">
 			<h1>
 				PORTAFOLIO
 			</h1>
 
 			<p>
-				Aqui debe decir algo del portafolio.
+				Diseñando lo mejor desde 1993.
 			</p>
-			
 			</div>
+	
 
-			<section id="bienvenidos">
-		<h1>Algo aqui</h1>
-			<p id="guion">__________________</p>
-			
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia minima doloribus sequi quidem similique nostrum error, quasi vel quo. Quidem consequuntur eius voluptatem, consectetur corrupti cumque rem sint autem.
-			</p>
+	<section id="bienvenidos">
+		<div id="contenido">
+			<h1>
+				Historia 
+			</h1>
+				<p>
+					Edificacion integral. Es una empresa que se formo con la idea de integrarlas disciplinas de la arquitectura,</br>  los espacios interiores y la edificacion de una manera integral y rentable.</br>
+					Nace en el año de 1999 y ha prestado servicios a empresas de reconocido prestigio en la region y en el pais, como lo son Dispamocusa, Uniroyal, Serfin, Bazareño, Urbi, Coppel, Almacenes Garcia, Caspasa, entre otros.
+
+				</p>
+		</div>
+			<div id="guion">
+				<p>____________________________________________________</p>
+			</div>
+		<div id="contenido">
+				<h1>
+					Nuestro trabajo
+				</h1>
+				<p>
+					En toda iniciativa de inversion, ayudamos a nuestros clientes a resolver su proyecto de acuerdo a sus expectativas de rentabilidad, confort y funcionalidad. 
+					Procuramos que la idea de diseño responda adecuadamente a sus propositos, apoyandonos en el analisis de los diferentes factores que intervienen en todo proceso de planeacion.
+
+				</p>
+		</div>
+
 	</section>
-				
 
 
 	

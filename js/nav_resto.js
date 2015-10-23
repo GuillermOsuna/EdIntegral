@@ -161,14 +161,19 @@ $(document).scroll(function() {
 
 
 		if($(this).scrollTop() / c>=.3){
-  	$('#guion').css('bottom', '70px');
-  	$('#guion').css('bottom', '70px');
+  	$('#guion').css('bottom', '10%');
   }	
   if($(this).scrollTop() / c<=.3){
-  	$('#guion').css('bottom', '530px');
-  	$('#guion').css('bottom', '530px');
+  	$('#guion').css('bottom', '100%');
   }
-	
+  if($(this).scrollTop() / c>=.8){
+  	$('#back').css('z-index', '-100');
+  	$('.inf_back').css('z-index', '-99');
+  }	
+	if($(this).scrollTop() / c<.8){
+  	$('#back').css('z-index', '-50');
+  	$('.inf_back').css('z-index', '-49');
+  }	
 });
 
 

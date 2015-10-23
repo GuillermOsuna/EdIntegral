@@ -100,10 +100,6 @@ video{
 		
 }
 
-
-
-
-
 #cabezera nav .fade-transparent {
 
     background-color: transparent;
@@ -193,9 +189,6 @@ video{
 	padding-top: 9%;
 	font-size: 35px;
 	letter-spacing: 1px;
-
-
-	
 }
 #bienvenidos p{
 	padding-bottom: 9%;
@@ -214,8 +207,6 @@ video{
 	-webkit-transition: font-size 1s;
 	-moz-transition: font-size 1s;
 	-o-transition: font-size 1s;
-
-
 }
 
 

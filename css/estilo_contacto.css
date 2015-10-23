@@ -1,44 +1,49 @@
 *{
 	margin:0px;
 	padding:0px;
+
+}
+*::-moz-selection{
+   background: rgba(0,0,0,.1);
+   color: #BD3600;
+   font-family: 'Roboto', sans-serif;
 }
 
 *::selection {
-background: #036564;
-color: white;
-text-shadow: none;
+   background: rgba(0,0,0,.1);
+   color: #BD3600;
 }
-
-
 body{
 	font-family: 'Roboto', sans-serif;
-
+	background-color: gray;
 
 }
 header{
 	width: 100%;
-
 }
-
-h1
-{
-	
-	color:#fff;
-	text-align: center;
-}
-
-#back 
-{
-	height: 500px;
-
-
-}
-.fondoP{
-	position: relative;
+#back{
+	background: url(../img/trato.jpg) 50% 50% no-repeat;
 	width: 100%;
-	height:100%;
+	height:700px;
+	position: fixed;
+	top:0;
+	left:0;
 	z-index: -50;
-	margin-bottom: -15px;
+	overflow: hidden;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size: cover;
+}
+
+#back_image{
+	min-width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size: cover;
+
+	
 }
 
 #cabezera nav
@@ -48,7 +53,8 @@ h1
     position: fixed;
     top:0;
     left:0;
-    background: rgba(51, 51, 51 0);
+    background: transparent;
+    /*box-shadow: 2px 1px 3px rgba(0,0,0, 1);*/
     z-index: 100;
 }
 
@@ -58,12 +64,17 @@ h1
 	float:right;
 }
 
+#cabezera nav .div_logo{
+	float: left;
+	margin:0;
+	padding-top: 8px;
+	padding-left: 15px;
+}
+
 #cabezera nav .logo
 {
 	width: 27px;
-	padding-left: 10px;
-	margin-top: 3px;
-	margin-bottom: -55px;
+	
 }
 #cabezera nav ul li
 {
@@ -75,17 +86,31 @@ h1
 
 #cabezera nav ul li a 
 {
-	display: block;
+	color: rgba(255,255,255,1);	
 	padding: 27px;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: block;
 	text-decoration: none;
-	color: #fff;
-	margin-top: -20px;
+	-webkit-transition: color 2s;
+	-moz-transition: color 2s;
+	-o-transition: color 2s;
 
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		visibility: hidden;
+		transform: scaleX(1);
+		background-color: red;
+		transition: all .3s ease-in;
+
+	}
+		
 }
-
-#cabezera nav ul li a:hover{
-	background: transparent;
-} 
 
 
 
@@ -93,20 +118,23 @@ h1
 
 #cabezera nav .fade-transparent {
 
-      background-color: transparent;
+    background-color: transparent;
 
-      -webkit-transition: background-color 1s;
-    	transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
 
+}
+.menu_bar{
+	display:none;
 }
 
 .navi
 {
 	font-size: 23px;
-	color: #fff;
+	color: transparent;
 	float:left;
-    margin-top: -10px;
-    padding-left:50px ;
+	padding-left: 4px;
+    padding-top: 10px;
     -webkit-transition-property:color, text;
     -webkit-transition-duration: .05s, 0.5s;
     -webkit-transition-timing-function: ease;
@@ -122,15 +150,18 @@ h1
 
 }
 
+
 .inf_back{
 	width: 100%;
-	height: 300px;
-	top: 190px;
+	height: 700px;
+	padding-top: 200px;
+	top: 0px;
 	position: absolute;
 	float: left;
 	color: #fff;
 	text-align: center;
 	z-index: -49;
+	background-color: rgba(0,0,0,.5);
 	
 }
 
@@ -143,66 +174,40 @@ h1
 	font-size: 20px;
 }
 
-.contact  div
-{
-	display: table-cell;
 
-}
 
-.contact section 
-{
+
+/**************************
+	ABAJO NUEVO CODIGO
+**************************/
+
+.contact{
 	display: block;
-
-
-
-}
-
-.contact 
-{
-		padding-bottom: 395px;
-}*/
-
-/*.block-half .direccion div
-{
-	width: 100%;
-
-}
-*/
-
-.block-half
-{
-
-	width: 100%;
 	float: left;
-	background: #fff;
-	vertical-align: middle;
-	padding: 5.5em 0;
-}
-
-.block-contact
-{
-	
-	float: left;
-	background-color: #fff;
+	margin-top: 400px;
 	width: 100%;
-
+	height: 500px;
 }
 
 .direccion
 {
-	background: url(../img/contact-address-bg2.jpg);
-	text-align: left;
+	display: block;
+	background: url(../img/contact-address-bg2.jpg) 50% 50% no-repeat;
+	width: 50%;
+	height: 100%;
+	background-color: #fff;
+	float: left;
 	color: white;
 	font-size: 2em;
-	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size: cover;
 }
 .direccion h3 
 {
-	/*font-size: 1.85em;*/
-	margin: 0em 1.5em;
-	font-weight: 600;
-	/*text-rendering: optimizeLegibility;
-	line-height: 1.3;*/
+	margin-top: 50px;
+	text-align: center;
 }
 .direccion hr
 {
@@ -214,56 +219,64 @@ h1
 	border-style: inset;
 	border-width: 1px;
 	border-width: 1px 0 0;
-	clear: both;
-	
-
+	clear: both;	
 }
+
 .direccion hr.separador {
 
 	margin: .7em 0;
-	width: 40%;
+	width: 25%;
 	display: block;
-	border: 1px solid #036564;
-	margin-left: 1.8em;
+	border: 1px solid rgba(139,96,0,1);
+	margin-left: 40%;
+	text-align: center;
 
 }
 .direccion p 
 {
-	margin-left: 1.8em;
+	text-align: center;
 }
 
 
- .block-form 
-{
-	background:#E8DDCB; 
+
+
+ .datos
+{	
+	display: block;
+	float:left;
+	width: 50%;
+	height: 100%;
+	background:#fff; 
 	position: relative;
-	text-align: left;
-	padding: 5.5em ;
 
 }
-.block-form h3 
+.datos h3 
 {
+	margin-top: 50px;
 	font-size: 1.85em;
 	text-align: center;
 	color: gray;
 }
-.block-form hr 
+.datos hr 
 {
 	display: block;
 	width: 25%;
 	margin: 1em auto;
-	border: 1px solid #036564;
+	border: 1px solid rgba(139,96,0,1);
 }
 #boton 
 {
 	font-size: 110%;
 	margin-top: 1.4em;
+	margin-left: 1.4em;
+	float: left;
 	padding: .4em 2em .23em;
 }
 .btn-dark
 {
-	background-color: #000;
-	border: 1px solid #000;
+	background-color: rgba(139,96,0,1);
+	border: 0px;
+	border-radius: 5px;
 	color: #fff !important;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
@@ -271,7 +284,7 @@ h1
 }
 .btn-dark:hover
 {
-	background-color:#036564;
+	background-color: rgba(99,56,0,1);
 
 }
 
@@ -283,50 +296,68 @@ h1
 
 .fields input 
 {
-	padding: 3em 1em 0.5em .1em;
-	/*padding: 0.75em 0.1em 0.25em;*/
-	background: transparent;
 	background-color: transparent;
 	height: 50px;
-	width: 45%;
+	width: 46.5%;
 	border-top: #E8DDCB; 
 	border-left: #E8DDCB; 
 	border-right: #E8DDCB;
 	border-bottom: 1px solid #999;
-	border-radius: 0;
-	margin: 0;
-	overflow: visible;
-	line-height: normal;
 
 }
+#nom input, #mail input{
+	margin-left:2%;
+	margin-right:1%; 
+}
+#appel input, #tel input{
+	margin-left:1%;
+	margin-right:2%; 
+}
+
 .fields textarea
 {
 	border-radius: 0;
 	border: 0;
+	max-width: 90%;
+	min-width: 90%;
+	min-height: 100px;
+	max-height: 150px;
 	border-bottom: 1px solid #999;
 	background-color: transparent;
 	background: transparent;
-	padding: 3em 1em 0.5em .1em;
-	margin: 0;
+	margin-left: 5%;
+	margin-right: 5%;
 
 }
 
-#mapa
-{
-	background: blue;
+#map
+{	
+	display: block;
+	float: left;
+	background-color: gray;
+	margin-bottom: 298px;
 	width: 100%;
-	height:100%;
+	height:500px;
 }
 
 
 
-/***************************
-           IMAGENES
-***************************/
 
-article{
-	padding: 100px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************
+ARRIBA VA TODO EL CONTENIDO DE LA PAGINA
+***************************************/
 
 
 
@@ -337,10 +368,10 @@ footer{
 	color:#fff;
 	position: fixed;
 	bottom: -1px;
-	background-color:#036564;
+	background-color:#333332;
 	width: 100%;
-	height: 400px;
-	z-index: -100;
+	height: 300px;
+	z-index: -98;
 	text-align: center;
 	font-size: 18px;
 
@@ -365,7 +396,7 @@ footer ul li .imagenes
 }
 footer ul li h1
 {
-	color:#E8DDCB;
+	color:#FFF;
 
 	margin-top: -45px;
 	margin-left: 80px;
@@ -373,7 +404,7 @@ footer ul li h1
 }
 footer ul li p
 {
-	color:#E8DDCB;
+	color:#FFF;
 	margin-left: 80px;
 
 }
@@ -390,30 +421,157 @@ footer #edintegral ul li .logo
 {
 	width: 35px;
 	margin-right: -35px;
-
-
 }
 
-
-AIzaSyDVlmotM9z5kA8aqq7vUbzQ1PK-6F5RT9s
 
 
 /******************************
-			JQUERY
+		   MEDIA QUERY
 ******************************/
-@media screen (max-width: 54em) {
-.contact div {
-width: 50% !important;
-display: block !important;
-padding: 8% 0;
-
-}
+#nav2{
+	display: none;
 }
 
+@media screen and (max-width: 920px){
+	#menu2{
+	position: fixed;
+	top:0;
+	margin:0;
+	margin-top: 73px;
+	width: 100%;
+	height: 100%;
+	left: 100%;
+	background-color: rgba(255,255,255,1);
+	z-index: 2000;
+}
+#nav2{
+	display: block;
+	width: 100%;
+	height: 70px;
+	position:fixed;
+}
+#menu2 #nav2 ul{
+	overflow: hidden;
+	list-style: none;
+}
 
-@media screen and (max-width: 864px){
+#menu2 #nav2 ul li {
+	color:#fff;
 	
+}
+#menu2 #nav2 ul li a {
+	color: rgba(99,56,0,1);	
+	text-align:center;
+	padding: 20px;
+	display: block;
+	float:none;
+	border-bottom:1px solid rgba(0,0,0,.5);
+	text-decoration: none;
+}
+#menu2 #nav2 ul li .btn-inicio{
+	border-top:1px solid rgba(0,0,0,.5);
+}
+/*#nav2 ul li span {
+	margin-right: 10px; Por si agregamos iconos al menu
+}*/
+#menu2 #nav2 ul li a:hover{
+	background:rgba(240,240,240,1);;
+}
+
+
+	#cabezera nav{
+		width: 100%;
+		height: 70px;
+		margin:0;
+		position:fixed;
+	}
+	#links{
+
+	}
+	header nav ul{
+		display: none;
+	}
+	header nav ul li{
+		display: none;	}
+
+	.menu_bar{
+		display: block;
+		width: 100%;
+		height: 73px;
+	}
+	.menu_bar .bt-menu{
+		display:block;
+		padding:20px;
+		background-color: rgba(255,255,255,1);
+		height: 73px;
+		color: rgba(50,50,50,1);
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.menu_bar span{
+		float:right;
+		font-size: 40px;
+		
+	}
+
+.inf_back h1{
+	font-size: 4em;
+	}
 	#section1, #section2, #section3, #section4{
 	width: 100%;
-	} 
+	height: 380px;
+	}
+
+#prueba1{
+	background: url(../img/office2.jpg) 50% 0 no-repeat;
+	float: left;
+	margin:0px auto;
+	width: 100%;
+	height: 20%;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size: cover;
+	margin-bottom: 395px;
+}
+	/*****************************************
+			CODIGO NUEVO EN 920PX
+	*****************************************/
+	#perfil article{
+		width: 100%;	
+	}
+	#bienvenidos{
+		height: 600px;
+	}
+	#contenido{
+		width: 100%;
+	}
+	#guion{
+		display: none;
+	}
+	.direccion, .datos{
+		width: 100%;
+		height: 50%;
+	}
+	.contact{
+		height: 1000px;
+	}	
+}
+
+@media screen and (max-width: 480px){
+	.inf_back h1{
+	font-size: 2em;
+    letter-spacing: 0.14em;
+    margin-top: -100px;
+	}
+
+.inf_back p{
+	font-size: 15px;
+	}
+	#bienvenidos{
+		margin-top: 550px;
+	}
+
 }
