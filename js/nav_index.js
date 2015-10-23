@@ -3,7 +3,7 @@ $(document).scroll(function() {
   var cont;
   var myWidth;
    myWidth = window.innerWidth;
-	$('#prueba1').css('height', myWidth/4);
+	//$('#prueba1').css('height', myWidth/4);
 
   if (dHeight >= $(this).scrollTop()) {
   $('#cabezera nav').css('background', 'rgba(255, 255, 255,' + $(this).scrollTop() / $(window).height() + ')');
@@ -33,8 +33,17 @@ $(document).scroll(function() {
 			  });
 			});
 
+
+	
+	
+
+
+
+
+
 			}
 			else {
+
 				$('.navi').css('color', 'rgba(255,255,255,1)');
 
 				$(function() {
@@ -165,17 +174,17 @@ $(document).scroll(function() {
 			    $('#cabezera nav ul li #6').css('color', 'rgba(0,0,0,1)');
 			  });
 			});
+
 	  }
+
+
 			}
-
-
-
 		}
 
 
 		if($(this).scrollTop() / $(window).height()>=.3){
-  	$('#arrow_right').css('width', '25%');
-  	$('#arrow_left').css('width', '25%');
+  	$('#arrow_right').css('width', '20%');
+  	$('#arrow_left').css('width', '20%');
   }	
   if($(this).scrollTop() / $(window).height()<=.3){
   	$('#arrow_right').css('width', '0%');

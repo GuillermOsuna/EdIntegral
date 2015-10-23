@@ -208,12 +208,14 @@ video{
 #arrow_left, #arrow_right{
 	position:absolute;
 	height: 500px;
+	z-index: -1px;
 	-webkit-transition: width 2s;
 	-moz-transition: width 2s;
 	-o-transition: width 2s;
 }
 #arrow_left{
 	left:0%;
+
 	
 }
 #arrow_right{
@@ -226,12 +228,14 @@ video{
 	padding-top: 9%;
 	font-size: 35px;
 	letter-spacing: 1px;
+	z-index: 1;
 }
 #bienvenidos p{
 	padding-bottom: 9%;
 	margin-top: 40px;
 	font-size: 20px;
 	letter-spacing: 2px;
+	z-index: 1;
 }
 #bienvenidos #guion{
 	position: absolute;
@@ -349,19 +353,11 @@ video{
 /******************************
 			VACIO
 ******************************/
-
-
-
 #prueba1{
-	
-	background: url(../img/office1.jpg) 50% 0 no-repeat fixed;
-}
-
-#prueba1{
+	background: url(../img/office.jpg) 50% 50% no-repeat fixed;
 	float: left;
 	margin:0px auto;
 	width: 100%;
-	height: 20%;
 	margin-bottom: 298px;
 	position: relative;
 	width: 100%;
@@ -370,23 +366,19 @@ video{
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size: cover;
-
-}
- #prueba1{
- 	box-shadow: 0 0 20px rgba(0,0,0,0,0.9);
+	box-shadow: 0 0 20px rgba(0,0,0,0,0.9);
  	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0,0.9);
- 	/*margin-bottom: 395px;*/
- }
+}
 
 #prueba1 h1{
 	font-size:30px;
 	font-weight: 900px;
 	text-align: center;
-	padding: 50px;
-	padding-left: 20%;
-	padding-right: 20%;
-	color:rgba(255,255,255,1);
-	background-color: rgba(99,56,0,.80);
+	padding: 7%;
+	padding-left: 9%;
+	padding-right: 9%;
+	color:rgba(255,255,255,.8);
+	background-color: rgba(64,46,0,.80);
 	}
 
 
@@ -400,7 +392,7 @@ footer{
 	background-color:#333332;
 	width: 100%;
 	height: 300px;
-	z-index: -100;
+	z-index: -98;
 	text-align: center;
 	font-size: 18px;
 
@@ -433,7 +425,7 @@ footer ul li h1
 }
 footer ul li p
 {
-	color:#fff;
+	color:#FFF;
 	margin-left: 80px;
 
 }
@@ -565,9 +557,13 @@ footer #edintegral ul li .logo
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size: cover;
-	margin-bottom: 395px;
+	margin-bottom: 295px;
 
-}}
+}
+footer{
+	height: 550
+}
+}
 
 @media screen and (max-width: 480px){
 	.inf_back h1{
@@ -582,6 +578,16 @@ footer #edintegral ul li .logo
 	#bienvenidos{
 		margin-top: 550px;
 	}
+
+	#prueba1{
+		margin-bottom: 498px;
+	}
+	#prueba1 h1{
+		font-size: 22px;
+	}
+	footer{
+	height: 500px;
+}
 	
 }
 
