@@ -22,20 +22,34 @@ $(document).scroll(function() {
 		function WidthChange(mq) {
 			if (mq.matches) {
 				$('.navi').css('color', 'rgba(0,0,0,1)');	
+
+
+				$(function() {
+			  $('.navi').hover(function() {
+			    $('.navi').css('color', 'rgba(139,96,0,1)');
+			  }, function() {
+			    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
+			    $('.navi').css('color', 'rgba(0,0,0,1)');
+			  });
+			});
+
 			}
 			else {
 				$('.navi').css('color', 'rgba(255,255,255,1)');
-					if($(this).scrollTop() / $(window).height()>=.0 && $(this).scrollTop() / $(window).height()<=.2){
-	  	$('#cabezera nav ul li a').css('color', 'rgba(255,255,255,1)');
-	  	$('.navi').css('color', 'rgba(255,255,255,1)');
-	  		$(function() {
+
+				$(function() {
 			  $('.navi').hover(function() {
-			    $('.navi').css('color', 'rgba(100,100,100,1)');
+			    $('.navi').css('color', 'rgba(139,96,0,1)');
 			  }, function() {
 			    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
 			    $('.navi').css('color', 'rgba(255,255,255,1)');
 			  });
 			});
+
+				
+					if($(this).scrollTop() / $(window).height()>=.0 && $(this).scrollTop() / $(window).height()<=.2){
+	  	$('#cabezera nav ul li a').css('color', 'rgba(255,255,255,1)');
+	  	$('.navi').css('color', 'rgba(255,255,255,1)');
 
 	  		$(function() {
 			  $('#cabezera nav ul li #1').hover(function() {
@@ -97,7 +111,7 @@ $(document).scroll(function() {
 
 	  	$(function() {
 			  $('.navi').hover(function() {
-			    $('.navi').css('color', 'rgba(99,56,0,1)');
+			    $('.navi').css('color', 'rgba(139,96,0,1)');
 			  }, function() {
 			    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
 			    $('.navi').css('color', 'rgba(0,0,0,1)');

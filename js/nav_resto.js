@@ -98,7 +98,7 @@ $(document).scroll(function() {
 
 	  	$(function() {
 			  $('.navi').hover(function() {
-			    $('.navi').css('color', 'rgba(99,56,0,1)');
+			    $('.navi').css('color', 'rgba(139,96,0,1)');
 			  }, function() {
 			    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
 			    $('.navi').css('color', 'rgba(0,0,0,1)');
