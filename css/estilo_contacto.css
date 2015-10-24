@@ -20,6 +20,7 @@ body{
 }
 header{
 	width: 100%;
+	 font-family: 'Roboto', sans-serif !important;
 }
 #back{
 	background: url(../img/trato.jpg) 50% 50% no-repeat;
@@ -96,6 +97,7 @@ header{
 	-webkit-transition: color 2s;
 	-moz-transition: color 2s;
 	-o-transition: color 2s;
+	 font-family: 'Roboto', sans-serif !important;
 
 	&::after{
 		content: '';
@@ -131,6 +133,7 @@ header{
 
 .navi
 {
+	 font-family: 'Roboto', sans-serif !important;
 	font-size: 23px;
 	color: transparent;
 	float:left;
@@ -204,11 +207,13 @@ header{
 }
 
 .inf_back h1{
+	 font-family: 'Roboto', sans-serif !important;
 	 font-size: 5em;
     letter-spacing: 0.14em;
 }
 
 .inf_back p{
+	 font-family: 'Roboto', sans-serif !important;
 	font-size: 20px;
 }
 

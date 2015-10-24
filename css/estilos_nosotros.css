@@ -288,7 +288,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	width: 100%;
 	height: 700px;
 	margin-bottom: 298px;
-		-webkit-background-size: cover;
+	-webkit-background-size: cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size: cover;
@@ -305,9 +305,15 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	padding-bottom:0px;
 	text-align: center;
 }
-#perfil p{
+#perfil p {
 	font-size: 20px;
 	padding:50px;
+
+}
+#perfil #p2
+{
+	display: none;
+	
 }
 
 
@@ -544,4 +550,16 @@ footer #edintegral ul li .logo
 		margin-top: 550px;
 	}
 	
+	#perfil #p1
+	{
+		display: none;
+
+	}
+	#perfil #p2
+	{
+		font-size: 20px;
+		padding:50px;
+		display: block;
+
+	}
 }
