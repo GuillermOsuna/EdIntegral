@@ -225,15 +225,18 @@ video{
 
 
 #bienvenidos h1{
-	padding-top: 9%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 11%;
 	font-size: 35px;
 	letter-spacing: 1px;
 	z-index: 1;
 }
 #bienvenidos p{
-	padding-bottom: 9%;
-	margin-top: 40px;
 	font-size: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 40px;
 	letter-spacing: 2px;
 	z-index: 1;
 }
@@ -537,7 +540,9 @@ footer #edintegral ul li .logo
 		font-size: 40px;
 		
 	}
-
+.inf_back{
+	padding-top: 300px;
+}
 .inf_back h1{
 	font-size: 4em;
 	}
@@ -563,22 +568,38 @@ footer #edintegral ul li .logo
 footer{
 	height: 550
 }
+
 }
 
+
+
+
 @media screen and (max-width: 480px){
+	.inf_back{
+	padding-top: 350px;
+}
 	.inf_back h1{
 	font-size: 2em;
     letter-spacing: 0.14em;
     margin-top: -100px;
 	}
-
-.inf_back p{
+	.inf_back p{
 	font-size: 15px;
 	}
 	#bienvenidos{
+		height: 400px;
 		margin-top: 550px;
 	}
-
+	#bienvenidos h1{
+		font-size: 30px;
+	}
+	#bienvenidos p{
+		font-size: 15px;
+	}
+	#arrow_left, #arrow_right{
+		height: 400px;
+	}
+	
 	#prueba1{
 		margin-bottom: 498px;
 	}

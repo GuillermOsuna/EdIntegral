@@ -34,9 +34,18 @@ $(document).scroll(function() {
 			});
 
 
-	
-	
-
+				$('#arrow_right').css('width', '0%');
+				$('#arrow_left').css('width', '0%');
+			if($(this).scrollTop() / $(window).height()>=.3){
+			  	$('#arrow_right').css('width', '10%');
+			  	$('#arrow_left').css('width', '10%');
+			  }	
+			  $('#arrow_right').css('width', '10%');
+			  $('#arrow_left').css('width', '10%');
+			  if($(this).scrollTop() / $(window).height()<=.3){
+			  	$('#arrow_right').css('width', '0%');
+			  	$('#arrow_left').css('width', '0%');
+			  }
 
 
 
@@ -177,20 +186,27 @@ $(document).scroll(function() {
 
 	  }
 
+	  				$('#arrow_right').css('width', '0%');
+	  				$('#arrow_left').css('width', '0%');
+				if($(this).scrollTop() / $(window).height()>=.3){
+				  	$('#arrow_right').css('width', '20%');
+				  	$('#arrow_left').css('width', '20%');
+				  }	
+				  $('#arrow_right').css('width', '20%');
+				  $('#arrow_left').css('width', '20%');
+				  if($(this).scrollTop() / $(window).height()<=.3){
+				  	$('#arrow_right').css('width', '0%');
+				  	$('#arrow_left').css('width', '0%');
+				  }
 
-			}
+
+			//LLAVE DE ELSE 
+		}
+
 		}
 
 
-		if($(this).scrollTop() / $(window).height()>=.3){
-  	$('#arrow_right').css('width', '20%');
-  	$('#arrow_left').css('width', '20%');
-  }	
-  if($(this).scrollTop() / $(window).height()<=.3){
-  	$('#arrow_right').css('width', '0%');
-  	$('#arrow_left').css('width', '0%');
-  }
-	
+		
 });
 
 
