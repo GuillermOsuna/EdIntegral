@@ -1,0 +1,6 @@
+$( document ).ready(function(){
+
+	$("#back").on("click",function(){
+		console.log ("the button has been clicked");
+	});
+}
