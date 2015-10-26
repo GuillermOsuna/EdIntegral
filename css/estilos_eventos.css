@@ -195,7 +195,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	background: url(../img/flechaizquierda.png)    no-repeat;
 }
 #eventos_derecha{
-	background: url(../img/blancoderecha.png)    no-repeat;
+	
 }
 
 
@@ -281,8 +281,17 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 
 #eventos_derecha{
-	background-size: 100.5% 100%;
 	background-color: #a34b11;
+}
+.blancoderecha{
+	position: absolute;
+	left: 0%;
+	width: 100.5%;
+	height: 400px;
+	z-index: 0;
+	-webkit-transition: left .9s;
+	-moz-transition: left .9s;
+	-o-transition: left .9s;
 }
 
 #cont_der{

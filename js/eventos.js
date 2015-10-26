@@ -54,17 +54,17 @@ $('#mas_der').click(function(){
 
 		if(contador_der==1){
 
-			$('#eventos_der').css('background-size', '210% 100%');
+			$('.blancoderecha').css('left', '-52%');
 			$('#cont_der').animate({
-				right:'35%'
+				left:'41%'
 			});
 			$('#cont_der').css('margin-top', '3%');
 
 		$('#mas_der').animate({
-				right:'2%'
+				left:'2%'
 			});
 		$('#mas_der').css('margin-top', '350px');
-		$('#txt_der').css('opacity', '1');
+		$('#txt').css('opacity', '1');
 
 	
 			
@@ -74,18 +74,18 @@ $('#mas_der').click(function(){
 		}
 		else{
 		
-			$('#eventos_derecha').css('background-size', '100% 100%');
+			$('.blancoderecha').css('left', '0%');
 
 			$('#cont_der').animate({
-				right:'50%'
+				left:'50%'
 			});
 			$('#cont_der').css('margin-top', '13%');
 
 			$('#mas_der').css('margin-top', '185px');
 			$('#mas_der').animate({
-				right:'40%'
+				left:'40%'
 			});
-			$('#txt_der').css('opacity', '0');
+			$('#txt').css('opacity', '0');
 
 
 			contador_der=1;
