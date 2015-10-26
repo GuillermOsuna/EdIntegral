@@ -195,7 +195,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	background: url(../img/flechaizquierda.png)    no-repeat;
 }
 #eventos_derecha{
-	background: url(../img/flechaderecha.png)    no-repeat;
+	background: url(../img/blancoderecha.png)    no-repeat;
 }
 
 
@@ -272,7 +272,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	-o-transition: margin 1.7s;
 
 }
-#mas:hover{
+#mas:hover, #mas_der:hover{
 	background-color: #5C5C5A;
 }
 
@@ -281,15 +281,16 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 
 #eventos_derecha{
-	
+	background-size: 100.5% 100%;
+	background-color: #a34b11;
 }
 
 #cont_der{
 	position: absolute;
 	width: 300px;
 	margin-top: 13%;
-	margin-left: 20%;
-	right: 50%;
+	margin-right: 20%;
+	left: 50%;
 	text-align: left;
 	font-size: 25px;
 	z-index: 3;
@@ -301,7 +302,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	
 }
 
-#txt_der{
+#txt{
 	position: absolute;
 	text-align: center;
 	padding:200px;
@@ -310,7 +311,6 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	font-size: 20px;
 	z-index: 2;
 	opacity:0;
-
 	-webkit-transition: opacity 1s;
 	-moz-transition: opacity 1s;
 	-o-transition: opacity 1s;
@@ -328,7 +328,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	text-align: center;
 	color:white;
 	background-color: #333332;
-	right:40%;
+	left:40%;
 	margin: 185px 0 0 0;
 	z-index: 10;
 
