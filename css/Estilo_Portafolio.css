@@ -262,6 +262,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 #Home{
 	background: url(../img/p1.jpg) 50% 0% no-repeat fixed;
+	top: 400px;
 }
 
 #section2{
@@ -296,6 +297,9 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
  #home, #section2, #section3 #section4, #section5{
  	box-shadow: 0 0 20px rgba(0,0,0,0,0.4);
  	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0,0.4);
+ }
+ #section5{
+ 	margin-bottom: 298px;
  }
  article{
  	padding: 100px;
@@ -334,16 +338,6 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 
 }
-
-#vacio{
-	width: 100%;
-	height: 398px;
-	background-color: black;
-	/*background-color: rgba(0, 0, 255, 0.3);*/
-	z-index: -99;
-	opacity: .3;	
-}
-
 
 /***************************************
 ARRIBA VA TODO EL CONTENIDO DE LA PAGINA

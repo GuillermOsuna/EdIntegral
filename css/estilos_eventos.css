@@ -173,216 +173,169 @@ header{
 	font-size: 20px;
 }
 
-#bienvenidos{
-	background: url(../img/flechaderecha.png)    no-repeat;
-	display: block;
-	margin-top: 400px;
-	padding:0;
-	background-color: #fff;
-	width: 100%;
-	height: 400px;
-	overflow: hidden;
-	text-align: center;
-	border-bottom: 5px black;
-}
-.section_rgba3 {
-	background-color: rgba(0,0,0,.5);
-	-webkit-transition: background-color 1s;
-	-moz-transition: background-color 1s;
-	-o-transition: background-color 1s;
-	
-}
-
-#bienvenidos #imagenmas
-{
-	float: left;
-	opacity: .5;
-	/*display: none;*/
-	margin-left: -65%;
-	display: none;
-	margin-top: 1%;
 
 
-	width: 700px;
-	position: absolute;
-}
-
-#bienvenidos2{
-background: url(../img/flechaizquierda.png)    no-repeat;
-	display: block;
-	padding:0;
-	background-color: #fff;
-	width: 100%;
-	height: 400px;
-	overflow: hidden;
-	text-align: center;
-}
-#bienvenidos3{
-	background: url(../img/flechaderecha.png)   no-repeat;
-	display: block;
-	padding:0;
-	background-color:#fff;
-	width: 100%;
-	height: 400px;
-	overflow: hidden;
-	text-align: center;
-}
-#bienvenidos4{
-	background: url(../img/flechaizquierda.png)    no-repeat;
-	display: block;
-	padding:0;
-	background-color:#fff;
-	width: 100%;
-	height: 400px;
-	overflow: hidden;
-	text-align: center;
-	margin-bottom: 295px;
-}
-#contenidoder #p1,#p2,#p3,#p4
-{
-	display: none;
-	font-size: 20px;
-	text-align: left;
-	/*float: center;*/
-	margin-top: 10%;
-}
-#contenidoizq #p1,#p2,#p3,#p4 
-{
-	display: none;
-}
-#contenidoder img 
-{
-	margin-top: -14%;
-	margin-left: 22.7%;
 
 
-	
 
-}
-#contenidoizq img 
-{
-	width: 950px;
-	height: 420px;
-	margin-top: -20%;
-	margin-left: -7.7%;
-}
 
-#contenidoder{
-	margin-top: 3%;
-	margin-right:15%;
-	margin-left:15%;
-	float:left;
-	width: 75%;
-	color: white;
-	font-weight: bold;
-	
-}
-#contenidoizq{
-	margin-top: 3%;
-	margin-right:15%;
-	margin-left:15%;
-	float:left;
-	width: 75%;
-	color: white;
-	font-weight: bold;
-	border-top: 5px black;
-	border-bottom: 5px black;
-}
-#contenidoder #h21,#h23{
-	font-size: 30px;
-	letter-spacing: 1px;
-	text-align: left;
-	float:left;
-	color: black;
-	margin-left: -10%;
-}
-#contenidoizq #h22,#h24{
-	font-size: 30px;
-	letter-spacing: 1px;
-	text-align: right;
-	float: right;
-	color: black;
-	margin-right: -10%;
-}
-#contenidoizq{
-	font-size: 20px;
-	letter-spacing: 2px;
-}
-#contenidoizqder{
-	font-size: 20px;
-	letter-spacing: 2px;
-}
 
-#menos1,#menos2,#menos3,#menos4
-{
-	display: none;
-}
-#mas1,#mas2,#mas3,#mas4
-{
-	
-}
+
+
+
+
+
+
 
 /***********************************
 ABAJO VA EL CONTENIDO DE LA PAGINA
 ************************************/
 
+#eventos_izquierda{
+	background: url(../img/flechaizquierda.png)    no-repeat;
+}
+#eventos_derecha{
+	background: url(../img/flechaderecha.png)    no-repeat;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#perfil{
-	background: url(../img/achitect.jpg) 50% 50% no-repeat;	
+#eventos_izquierda, #eventos_derecha{
+	background-size: 100% 100%;
+	float:left;
+	background-color: #fff;
+	overflow: hidden;
 	width: 100%;
-	height: 700px;
+	height: 400px;
+	color:white;
+	-webkit-transition: background-size 1.2s;
+	-moz-transition: background-size 1.2s;
+	-o-transition: background-size 1.2s;
+}
+.eventos_izquierda_home{
+	margin-top: 400px;
+}
+
+.eventos_izquierda_final{
 	margin-bottom: 298px;
-		-webkit-background-size: cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size: cover;
+	}
+
+
+#cont{
+	position: absolute;
+	width: 300px;
+	margin-top: 13%;
+	margin-left: 20%;
+	right: 50%;
+	text-align: left;
+	font-size: 25px;
+	z-index: 3;
+
+	-webkit-transition: margin 2s;
+	-moz-transition: margin 2s;
+	-o-transition: margin 2s;
+
+	
 }
-#perfil article{
-	color:#fff;
-	width: 49.5%;
-	height: 100%;
-	background-color: rgba(0,0,0,.3);
-}
-#perfil h1{
-	font-size: 40px;
-	padding:50px;
-	padding-bottom:0px;
+
+#txt{
+	position: absolute;
 	text-align: center;
-}
-#perfil p{
+	padding:200px;
+	padding-top:150px;
+	padding-bottom:0px;
 	font-size: 20px;
-	padding:50px;
+	z-index: 2;
+	opacity:0;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+}
+
+#mas{
+	position: absolute;
+	outline-style: none;
+	border-style: none;
+	border-radius: 100px;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	text-align: center;
+	color:white;
+	background-color: #333332;
+	right:40%;
+	margin: 185px 0 0 0;
+	z-index: 10;
+	cursor: pointer;
+	-webkit-transition: margin 1.7s;
+	-moz-transition: margin 1.7s;
+	-o-transition: margin 1.7s;
+
+}
+#mas:hover{
+	background-color: #5C5C5A;
 }
 
 
 
 
 
+#eventos_derecha{
+	
+}
+
+#cont_der{
+	position: absolute;
+	width: 300px;
+	margin-top: 13%;
+	margin-left: 20%;
+	right: 50%;
+	text-align: left;
+	font-size: 25px;
+	z-index: 3;
+
+	-webkit-transition: margin 2s;
+	-moz-transition: margin 2s;
+	-o-transition: margin 2s;
+
+	
+}
+
+#txt_der{
+	position: absolute;
+	text-align: center;
+	padding:200px;
+	padding-top:150px;
+	padding-bottom:0px;
+	font-size: 20px;
+	z-index: 2;
+	opacity:0;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+}
 
 
+#mas_der{
+	position: absolute;
+	outline-style: none;
+	border-style: none;
+	border-radius: 100px;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	text-align: center;
+	color:white;
+	background-color: #333332;
+	right:40%;
+	margin: 185px 0 0 0;
+	z-index: 10;
 
-
-
-
-
+	-webkit-transition: margin 1.7s;
+	-moz-transition: margin 1.7s;
+	-o-transition: margin 1.7s;
+}
 
 
 
