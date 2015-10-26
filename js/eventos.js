@@ -93,18 +93,6 @@ $('.mas11').click(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 var contador_der=1;
 var contador_der21=1;
 function main_der(){
@@ -149,10 +137,6 @@ $('#mas_der').click(function(){
 			contador_der=1;
 		}
 	});
-
-
-
-
 $('#mas_der21').click(function(){
 
 		if(contador_der21==1){
