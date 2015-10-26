@@ -162,9 +162,11 @@ $(document).scroll(function() {
 
 		if($(this).scrollTop() / c>=.3){
   	$('#guion').css('bottom', '10%');
+  	$('footer').css('z-index', '-1');
   }	
   if($(this).scrollTop() / c<=.3){
   	$('#guion').css('bottom', '100%');
+  	$('footer').css('z-index', '-98');
   }
   if($(this).scrollTop() / c>=.8){
   	$('#back').css('z-index', '-100');

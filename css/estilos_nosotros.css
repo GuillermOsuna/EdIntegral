@@ -17,6 +17,9 @@ body{
 	background-color: gray;
 
 }
+.inf_back h1{
+	font-weight: 200;
+}
 header{
 	width: 100%;
 }

@@ -175,50 +175,11 @@
 			
 
 <div id ="map">
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-		    <script type="text/javascript">
-		    	/*var image= new google.maps.MarkerImage(
-		    			"",
-		    			new google.maps.Size(20,20)
-		    		);*/
-
-				var map;
-				var marker;
-
-				function init() {
-					var mapOptions={
-						center: new google.maps.LatLng(24.7968683,-107.3937001),
-						zoom: 15,
-						scrollwheel:false,
-						navigationControl: false,
-						mapTypeControl: false,
-						scaleControl: false,    
-						mapTypeId: google.maps.MapTypeId.ROADMAP
-					}
-
-					  map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-					  var place= new google.maps.LatLng(24.796898,-107.3925104);
-					  marker = new google.maps.Marker({
-					  	position:place,
-					  	title:"Edificacion Integral",
-					  	map: map,
-					  	icon: 'img/icono.png'
-					  });
-
-					}
-					init();
-
-		    </script>
+   
+		    
 	</div>
 
-		    <script type="text/jacascript">
-		    	$('#map').hover(function() {
-						$(window).scroll();
-			    
-			  });
-
-		    </script>
+		    
 
 	
 </body>
@@ -289,7 +250,48 @@
 	</footer>
 </body>
 </html>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		    <script type="text/javascript">
+		    	/*var image= new google.maps.MarkerImage(
+		    			"",
+		    			new google.maps.Size(20,20)
+		    		);*/
 
+				var map;
+				var marker;
+
+				function init() {
+					var mapOptions={
+						center: new google.maps.LatLng(24.7968683,-107.3937001),
+						zoom: 15,
+						scrollwheel:false,
+						navigationControl: false,
+						mapTypeControl: false,
+						scaleControl: false,    
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+					}
+
+					  map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+					  var place= new google.maps.LatLng(24.796898,-107.3925104);
+					  marker = new google.maps.Marker({
+					  	position:place,
+					  	title:"Edificacion Integral",
+					  	map: map,
+					  	icon: 'img/icono.png'
+					  });
+
+					}
+					init();
+
+		    </script>
+	<script type="text/jacascript">
+		    	$('#map').hover(function() {
+						$(window).scroll();
+			    
+			  });
+
+		    </script>
 
 
 

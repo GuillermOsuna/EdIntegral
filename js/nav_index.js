@@ -1,4 +1,5 @@
 $(document).scroll(function() {
+	var c=$(window).height()-350;
   var dHeight = $(this).height()-$(window).height();
   var cont;
   var myWidth;
@@ -184,7 +185,16 @@ $(document).scroll(function() {
 			  });
 			});
 
-	  }
+	  }		
+
+	  			if($(this).scrollTop() / c>=5){
+			  	$('footer').css('z-index', '-1');
+			  			}	
+			  	if($(this).scrollTop() / c<=5){
+			  	$('footer').css('z-index', '-98');
+			  			}	
+
+	  			
 
 	  				$('#arrow_right').css('width', '0%');
 	  				$('#arrow_left').css('width', '0%');

@@ -17,6 +17,9 @@ body{
 	background-color: gray;
 
 }
+.inf_back h1{
+	font-weight: 200;
+}
 header{
 	width: 100%;
 }
@@ -266,7 +269,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 }
 
 #section2{
-	background: url(../img/p2.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/portafolio_escuela.jpg) 50% 0 no-repeat fixed;
 }
 
 #section3{
