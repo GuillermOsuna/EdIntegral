@@ -18,6 +18,7 @@ $( document ).ready(function(){
 		$('#p1').css('display','block');
 		$('#entrevista').css('color','white');
 		$('#bienvenidos').css('background-color','rgba(163,75,17,1)');
+		$('#hr1').show();
 
 
 	});
@@ -30,6 +31,7 @@ $( document ).ready(function(){
 
 		$('#p1').hide();
 		$('#bienvenidos').css('background-color','rgba(255,255,255,1)');
+		$('#hr1').hide();
 
 
 	});
@@ -45,6 +47,7 @@ $( document ).ready(function(){
 		$('#p2').css('display','block');
 		/*$('#bienvenidos').css('background-color','rgba(163,75,17,1)');*/
 		$('#bienvenidos2').css('background-color','rgba(163,75,17,1)');
+		$('#hr2').show();
 
 	});
 
@@ -57,6 +60,7 @@ $( document ).ready(function(){
 
 		$('#p2').hide();
 		$('#bienvenidos2').css('background-color','rgba(255,255,255,1)');
+		$('#hr2').hide();
 
 
 	});
@@ -69,6 +73,7 @@ $( document ).ready(function(){
 		$('#h23').css('margin-left','35%');
 		$('#h23').css('color', 'white');
 		$('#bienvenidos3').css('background-color','rgba(163,75,17,1)');
+		$('#hr3').show();
 
 	});
 
@@ -83,6 +88,7 @@ $( document ).ready(function(){
 		$('#h23').css('color', 'black');
 		$('#p3').hide();
 		$('#bienvenidos3').css('background-color','rgba(255,255,255,1)');
+		$('#hr3').hide();
 
 
 	});
