@@ -424,7 +424,7 @@ footer #piecera #content ul li,#content2 ul li, #content3 ul li
 footer #piecera #content img 
 {
 	width: 150px;
-	height: 40px;
+	height: 35px;
 }
 
 
@@ -467,6 +467,7 @@ footer #piecera #content3 p
 	margin-left: 15%;
 
 }
+
 
 
 
@@ -583,7 +584,7 @@ footer #piecera #content3 p
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size: cover;
-	margin-bottom: 295px;
+	margin-bottom: 345px;
 
 }
 footer{
@@ -622,14 +623,74 @@ footer{
 	}
 	
 	#prueba1{
-		margin-bottom: 498px;
+		margin-bottom: 350px;
 	}
 	#prueba1 h1{
 		font-size: 22px;
 	}
-	footer{
-	height: 500px;
-}
+	
+	footer
+	{
+		height: 350px;
+		margin-top: 100px;
+		margin-top: 0 auto;
+		/*padding-bottom: -15%;*/
+		padding-top: 100px;
+		font-size: 12px;
+
+	}
+	footer #piecera #content
+	{
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 5%;
+
+
+	}
+	footer #piecera #content img
+	{
+		width: 85px;
+		height: 30px;
+	}
+
+	footer #piecera #content2
+	{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+		footer #piecera #content2 p, #content3 p
+	{
+		display: none;
+	}
+	footer #piecera #content2 h3
+	{
+		margin-left: 32%;
+
+
+	}
+	footer #piecera #content2 img 
+	{
+		width: 25px;
+		margin-top: 18%
+	}
+	footer #piecera #content2 ul li 
+	{
+		margin-right:10%;
+		text-align: center;
+
+
+	}
+
+	footer #piecera #content3 img 
+	{
+		margin-top: 18%;
+		margin: 0 auto;
+		width: 40px;
+	}
+	footer #piecera #content3
+	{
+		width: 100%;
+	}
 	
 }
 

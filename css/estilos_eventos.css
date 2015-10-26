@@ -397,7 +397,7 @@ footer #piecera #content ul li,#content2 ul li, #content3 ul li
 footer #piecera #content img 
 {
 	width: 150px;
-	height: 40px;
+	height: 35px;
 }
 
 
@@ -584,6 +584,72 @@ footer #piecera #content3 p
 	}
 	#bienvenidos{
 		margin-top: 550px;
+	}
+	#mas_der21
+	{
+		margin-bottom: 350px;
+	}
+	footer
+	{
+		height: 300px;
+		margin-top: 100px;
+		margin-top: 0 auto;
+		padding-bottom: -15%;
+		padding-top: 100px;
+		font-size: 12px;
+
+	}
+	footer #piecera #content
+	{
+		width: 100%;
+		margin-top: -30px;
+		margin-bottom: 5%;
+
+
+	}
+	footer #piecera #content img
+	{
+		width: 85px;
+		height: 30px;
+	}
+
+	footer #piecera #content2
+	{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+		footer #piecera #content2 p, #content3 p
+	{
+		display: none;
+	}
+	footer #piecera #content2 h3
+	{
+		margin-left: 32%;
+
+
+	}
+	footer #piecera #content2 img 
+	{
+		width: 25px;
+		margin-top: 18%
+	}
+	footer #piecera #content2 ul li 
+	{
+		margin-right:10%;
+		text-align: center;
+
+
+	}
+
+	footer #piecera #content3 img 
+	{
+		margin-top: 18%;
+
+		width: 40px;
+	}
+	footer #piecera #content3
+	{
+		width: 100%;
 	}
 	
 }
