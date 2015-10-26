@@ -367,51 +367,72 @@ footer{
 	font-size: 18px;
 
 }
-footer ul li
+footer #piecera
+{
+	width: 100%;
+	display: block;
+
+}
+footer #piecera #content,#content2,#content3
+{
+	width: 28.3%;
+	margin-top: 2%;
+	margin-right:2%;
+	margin-left:3%;
+	float:left;
+
+}
+footer #piecera #content ul li,#content2 ul li, #content3 ul li
 {
 	display: inline-block;
-	text-align: left;
-	padding: 0px, -15px;
-	padding-right: 40px;
-	padding-top: 30px;
-
-
+	margin: 5px 8px;
 
 }
-footer ul li .imagenes 
+footer #piecera #content img 
 {
-	width: 60px;
-	margin-left: 20px;
-
-
-}
-footer ul li h1
-{
-	color:#FFF;
-
-	margin-top: -45px;
-	margin-left: 80px;
-
-}
-footer ul li p
-{
-	color:#FFF;
-	margin-left: 80px;
-
-}
-footer #edintegral ul li h3 
-{
-	text-align: left;
-	
-	padding-right: 620px;
+	width: 150px;
+	height: 40px;
 }
 
 
-footer #edintegral ul li .logo
 
+footer #piecera #content2 img
 {
-	width: 35px;
-	margin-right: -35px;
+	width: 45px;
+	margin-left: -100%;
+	margin-top: 12%;
+
+}
+footer #piecera #content2 p
+{
+	margin-left: 15%;
+	font-size: 13px;
+	padding-left: 1%;
+
+}
+footer #piecera #content2 ul li
+{
+	margin-top: -2%;
+}
+footer #piecera #content2 h3 
+{
+	margin-top: -28%;
+}
+footer #piecera #content3 ul li
+{
+	margin-bottom: 5%;
+}
+footer #piecera #content3 img
+{
+	width: 2em;
+	margin-top: 10%;
+	margin-left: -100%;
+}
+footer #piecera #content3 p 
+{
+	margin-top: -16%;
+	margin-left: 15%;
+
 }
 
 
