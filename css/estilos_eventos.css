@@ -194,12 +194,10 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 #eventos_izquierda{
 	background: url(../img/flechaizquierda.png)    no-repeat;
 }
-#eventos_derecha{
-	
+#eventos_izquierda11{
+	background: url(../img/flechaizquierda.png)    no-repeat;
 }
-
-
-#eventos_izquierda, #eventos_derecha{
+#eventos_izquierda,#eventos_izquierda11, #eventos_derecha,#eventos_derecha21{
 	background-size: 100% 100%;
 	float:left;
 	background-color: #fff;
@@ -211,33 +209,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	-moz-transition: background-size 1.2s;
 	-o-transition: background-size 1.2s;
 }
-.eventos_izquierda_home{
-	margin-top: 400px;
-}
-
-.eventos_izquierda_final{
-	margin-bottom: 298px;
-	}
-
-
-#cont{
-	position: absolute;
-	width: 300px;
-	margin-top: 13%;
-	margin-left: 20%;
-	right: 50%;
-	text-align: left;
-	font-size: 25px;
-	z-index: 3;
-
-	-webkit-transition: margin 2s;
-	-moz-transition: margin 2s;
-	-o-transition: margin 2s;
-
-	
-}
-
-#txt{
+#txt, #txt11, #txt20,#txt21{
 	position: absolute;
 	text-align: center;
 	padding:200px;
@@ -251,8 +223,36 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	-moz-transition: opacity 1s;
 	-o-transition: opacity 1s;
 }
+.eventos_izquierda_home{
+	margin-top: 400px;
+}
 
-#mas{
+.eventos_izquierda_final{
+	margin-bottom: 298px;
+	}
+
+
+
+/*IZQUIERDA*/
+#cont,#cont11{
+	position: absolute;
+	width: 300px;
+	margin-top: 13%;
+	margin-left: 20%;
+	right: 50%;
+	text-align: center;
+	font-size: 25px;
+	z-index: 3;
+
+	-webkit-transition: margin 2s;
+	-moz-transition: margin 2s;
+	-o-transition: margin 2s;
+
+	
+}
+
+
+.mas,.mas11{
 	position: absolute;
 	outline-style: none;
 	border-style: none;
@@ -272,7 +272,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	-o-transition: margin 1.7s;
 
 }
-#mas:hover, #mas_der:hover{
+.mas:hover, .mas11:hover, #mas_der:hover{
 	background-color: #5C5C5A;
 }
 
@@ -280,10 +280,13 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 
 
-#eventos_derecha{
+
+
+/*DERECHA*/
+#eventos_derecha,#eventos_derecha21{
 	background-color: #a34b11;
 }
-.blancoderecha{
+.blancoderecha, .blancoderecha21{
 	position: absolute;
 	left: 0%;
 	width: 100.5%;
@@ -294,13 +297,13 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	-o-transition: left .9s;
 }
 
-#cont_der{
+#cont_der,#cont_der21{
 	position: absolute;
 	width: 300px;
 	margin-top: 13%;
 	margin-right: 20%;
 	left: 50%;
-	text-align: left;
+	text-align: center;
 	font-size: 25px;
 	z-index: 3;
 
@@ -311,22 +314,10 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	
 }
 
-#txt{
-	position: absolute;
-	text-align: center;
-	padding:200px;
-	padding-top:150px;
-	padding-bottom:0px;
-	font-size: 20px;
-	z-index: 2;
-	opacity:0;
-	-webkit-transition: opacity 1s;
-	-moz-transition: opacity 1s;
-	-o-transition: opacity 1s;
-}
 
 
-#mas_der{
+
+#mas_der,#mas_der21{
 	position: absolute;
 	outline-style: none;
 	border-style: none;
@@ -340,6 +331,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	left:40%;
 	margin: 185px 0 0 0;
 	z-index: 10;
+	cursor: pointer;
 
 	-webkit-transition: margin 1.7s;
 	-moz-transition: margin 1.7s;
