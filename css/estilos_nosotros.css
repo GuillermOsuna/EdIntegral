@@ -244,6 +244,10 @@ header{
 	font-size: 20px;
 	letter-spacing: 2px;
 }
+#contenido p{
+		margin-top: 20px;
+	}
+
 #guion{
 	display: block;
 	position: relative;

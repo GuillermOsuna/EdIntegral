@@ -619,7 +619,7 @@ footer{
 	}
 	
 	#prueba1{
-		margin-bottom: 350px;
+		margin-bottom: 348px;
 	}
 	#prueba1 h1{
 		font-size: 22px;
@@ -630,15 +630,12 @@ footer{
 		height: 350px;
 		margin-top: 100px;
 		margin-top: 0 auto;
-		/*padding-bottom: -15%;*/
-		padding-top: 100px;
 		font-size: 12px;
 
 	}
 	footer #piecera #content
 	{
 		width: 100%;
-		margin-top: 30px;
 		margin-bottom: 5%;
 
 
@@ -667,7 +664,7 @@ footer{
 	footer #piecera #content2 img 
 	{
 		width: 25px;
-		margin-top: 18%
+		
 	}
 	footer #piecera #content2 ul li 
 	{
