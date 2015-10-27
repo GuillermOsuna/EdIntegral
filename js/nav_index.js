@@ -187,10 +187,10 @@ $(document).scroll(function() {
 
 	  }		
 
-	  			if($(this).scrollTop() / c>=5){
+	  			if($(this).scrollTop() / c>=3){
 			  	$('footer').css('z-index', '-1');
 			  			}	
-			  	if($(this).scrollTop() / c<=5){
+			  	if($(this).scrollTop() / c<=3){
 			  	$('footer').css('z-index', '-98');
 			  			}	
 
