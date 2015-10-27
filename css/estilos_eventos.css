@@ -194,7 +194,50 @@ header{
 /***********************************
 ABAJO VA EL CONTENIDO DE LA PAGINA
 ************************************/
+#bienvenidos{
+	display: block;
+	margin-top: 400px;
+	padding:0;
+	background-color: #e2cb92;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	text-align: center;
+}
 
+#contenido{
+	margin-top: 9%;
+	margin-right:2%;
+	margin-left:2%;
+	float:left;
+	width: 90%;
+}
+#contenido h1{
+	font-size: 35px;
+	letter-spacing: 1px;
+}
+#contenido{
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+#guion{
+	display: block;
+	position: relative;
+	letter-spacing: .1px;
+	color:black;
+	padding:0;
+	margin:0;
+	
+	transform : rotate(90deg);
+	-moz-transform : rotate(90deg); /* Firefox */
+	-webkit-transform : rotate(90deg); /* Chrome - Safari */
+	-o-transform : rotate(90deg); /* Opera */
+
+	-webkit-transition: bottom 2s;
+	-moz-transition: bottom 2s;
+	-o-transition: bottom 2s;
+}
 #eventos_izquierda{
 	background: url(../img/flechaizquierda.png)    no-repeat;
 }
@@ -204,7 +247,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 #eventos_izquierda,#eventos_izquierda11, #eventos_derecha,#eventos_derecha21{
 	background-size: 100% 100%;
 	float:left;
-	background-color: #fff;
+	background-color: #e2cb92;
 	overflow: hidden;
 	width: 100%;
 	height: 400px;
@@ -228,7 +271,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	-o-transition: opacity 1s;
 }
 .eventos_izquierda_home{
-	margin-top: 400px;
+	/*margin-top: 400px;*/
 }
 
 .eventos_izquierda_final{
@@ -288,7 +331,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 /*DERECHA*/
 #eventos_derecha,#eventos_derecha21{
-	background-color: #a34b11;
+	background-color: #402e00;
 }
 .blancoderecha, .blancoderecha21{
 	position: absolute;
