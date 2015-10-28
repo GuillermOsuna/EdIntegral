@@ -20,11 +20,12 @@ body{
 .inf_back h1{
 	font-weight: 200;
 }
+
 header{
 	width: 100%;
 }
 #back{
-	background: url(../img/office.jpg) 50% 50% no-repeat;
+	background: url(../img/eyplazas/concurso1.jpg) 50% 50% no-repeat;
 	width: 100%;
 	height:700px;
 	position: fixed;
@@ -176,68 +177,83 @@ header{
 	font-size: 20px;
 }
 
-#seccion12{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************
+ABAJO VA EL CONTENIDO DE LA PAGINA
+************************************/
+/*e2cb92*/
+#seccion12
+{
+	width: 100%;
+	height:500px;
+	background: #fff;
 	display: block;
 	margin-top: 400px;
-	padding:0;
-	background-color: #fff;
-	width: 100%;
-	height: 700px;
-	overflow: hidden;
-	text-align: center;
-}
-#seccion34{
-	display: block;
-	padding:0;
-	background-color: pink;
-	width: 100%;
-	height: 700px;
 	overflow: hidden;
 	text-align: center;
 	margin-bottom: 295px;
-}
 
-#contenido{
-	margin-top: 2%;
-	margin-right:2%;
-	margin-left:2%;
-	float:left;
-	width: 46%;
 }
-#contenido h1{
-	font-size: 35px;
-	letter-spacing: 1px;
-}
-#contenido{
-	font-size: 20px;
-	letter-spacing: 2px;
-}
-
-#contenido img
+/*#seccion34
 {
-	width: 25em;
-
-}
-#guion{
+	width: 100%;
+	height:400px;
+	background: #e2cb92;
 	display: block;
-	position: relative;
-	letter-spacing: .1px;
-	color:black;
-	padding:0;
-	margin:0;
-	
-	transform : rotate(90deg);
-	-moz-transform : rotate(90deg); /* Firefox */
-	-webkit-transform : rotate(90deg); /* Chrome - Safari */
-	-o-transform : rotate(90deg); /* Opera */
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 295px;
 
-	-webkit-transition: bottom 2s;
-	-moz-transition: bottom 2s;
-	-o-transition: bottom 2s;
+}*/
+
+#servicios1, #servicios2, #servicios3
+
+{
+	display: block;
+	width: 32%;
+	margin-left: 1%;
+	float: left;
+	text-align: center;
+	background: #dcdbd9;
+	margin-top: 1%;
+	height: 475px;
+
+
+}
+#servicios1 h2, #servicios2 h2,#servicios3 h2 
+{
+	margin-top: 10%;
+	margin-bottom: 1%
 }
 
+#servicios1 img, #servicios2 img, #servicios3 img
+{
+	width: 370px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 4%;
 
-
+}
+#servicios1 p,#servicios2 p,#servicios3 p
+{
+	margin-left: 5%;
+	margin-right: 2.5%;
+	font-weight: bold;
+	font-size: 16px;
+}
 
 
 
@@ -251,6 +267,8 @@ header{
 /***************************************
 ARRIBA VA TODO EL CONTENIDO DE LA PAGINA
 ***************************************/
+
+
 
 /******************************
 			FOOTER
@@ -334,7 +352,6 @@ footer #piecera #content3 p
 	margin-left: 15%;
 
 }
-
 
 
 
@@ -480,13 +497,16 @@ footer #piecera #content3 p
 	#bienvenidos{
 		margin-top: 550px;
 	}
-
+	#mas_der21
+	{
+		margin-bottom: 350px;
+	}
 	footer
 	{
 		height: 300px;
 		margin-top: 100px;
 		margin-top: 0 auto;
-		/*padding-bottom: -15%;*/
+		padding-bottom: -15%;
 		padding-top: 100px;
 		font-size: 12px;
 
@@ -536,7 +556,7 @@ footer #piecera #content3 p
 	footer #piecera #content3 img 
 	{
 		margin-top: 18%;
-		margin: 0 auto;
+
 		width: 40px;
 	}
 	footer #piecera #content3
