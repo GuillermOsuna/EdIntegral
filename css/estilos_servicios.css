@@ -241,7 +241,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 #imagenes 
 {
 	width: 100%;
-	height:760px;
+	height:820px;
 	background: #e8e8e8;
 	margin-top: 400px;
 	/*overflow: hidden;*/
@@ -254,21 +254,24 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 #section1, #section3 
 {
-	width: 370px;
+	width: 450px;
 	margin-top: 3%;
-	margin-right: 1.5%;
-	margin-left: 11.5%;
+	margin-left: 3.5%;
+	margin-right:1.5%;
+
+
 
 }
 
 
 #section2,#section4
 {
-	width: 370px;
+	width: 450px;
 	margin-top: 3%;
+	margin-right: 3%;
+	margin-left: 1.5%;
 
-	margin-right: 7.5%;
-	/*margin-left: 0.5%;*/
+
 
 
 }
@@ -279,8 +282,8 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 #section1, #section2, #section3, #section4{
 	padding: 0;
-	width: 38%;
-	height: 320px;
+	width: 45%;
+	height: 350px;
 	float:left;
 	overflow: hidden;
 	background-size: cover;
