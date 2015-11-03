@@ -195,151 +195,162 @@ header{
 ABAJO VA EL CONTENIDO DE LA PAGINA
 ************************************/
 /*e2cb92*/
-#seccion12
-{
-	width: 100%;
-	height:500px;
-	background: #fff;
-	display: block;
-	margin-top: 400px;
-	overflow: hidden;
-	text-align: center;
 
+/***************************
+           IMAGENES
+***************************/
+
+
+
+
+#section1{
+	background: url(../img/manzana.jpg) 50% 50% no-repeat;
 }
-#seccion34
+
+#section2{
+	
+	background: url(../img/camiones.jpg) 50% 50% no-repeat;
+}
+#section3{
+	
+	background: url(../img/hotel.jpg) 50% 50% no-repeat;
+}
+#section4{
+	
+	background: url(../img/tenerife.jpg) 50% 50% no-repeat;
+}
+#imagenes 
 {
 	width: 100%;
-	height:500px;
-	background: #fff;
-	display: block;
-	overflow: hidden;
+	height:760px;
+	background: #e8e8e8;
+	margin-top: 400px;
+	/*overflow: hidden;*/
 	text-align: center;
 	margin-bottom: 295px;
 
 }
-/*article{
+
+
+
+#section1, #section3 
+{
+	width: 370px;
+	margin-top: 3%;
+	margin-right: 1.5%;
+	margin-left: 11.5%;
+
+}
+
+
+#section2,#section4
+{
+	width: 370px;
+	margin-top: 3%;
+
+	margin-right: 7.5%;
+	/*margin-left: 0.5%;*/
+
+
+}
+#section3,#section4
+{
+	margin-bottom: 3%;
+}
+
+#section1, #section2, #section3, #section4{
+	padding: 0;
+	width: 38%;
+	height: 320px;
+	float:left;
+	overflow: hidden;
+	background-size: cover;
+
+}
+
+
+
+ article{
+ 	padding:80px;
+ 	height:600px;
+
+ }
+#section1 h3, #section2 h3, #section3 h3, #section4 h3{
+	position:relative;
 	width: 100%;
-	height: 475px;
-	background-color: rgba(0,0,0,.3);
-}*/
-#transparent1
-{
-	display: block;
-	width: 48%;
-	margin-left: 1%;
-	margin-right: 1%;
-	float: left;
-		margin-top: 1%;
-	margin-bottom: 1%;
-	height: 475px;
-	overflow: hidden;
-
-
-
-}
-
-#servicios1, #servicios3
-
-{
-	display: block;
-	width: 48%;
-	margin-left: 1%;
-	margin-right: 1%;
-	float: left;
+	height:auto;
+	padding-top: -3%;
+	font-size: 35px;
+	-webkit-transition: font-size 1s;
+	-moz-transition: font-size 1s;
+	-o-transition: font-size 1s;
+	color: #fff;
 	text-align: center;
-	background: #dcdbd9;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	height: 475px;
-	overflow: hidden;
+
+		
+	
+	} 
+	#section1 p, #section2 p, #section3 p, #section4 p{
+	position:relative;
+	width: 100%;
+	height:auto;
+	padding-top: -20px;
+	font-size: 20px;
+	-webkit-transition: font-size 1s;
+	-moz-transition: font-size 1s;
+	-o-transition: font-size 1s;
+
+
+	color: #fff;
+	text-align: left;
+	
+	}
+
+.p1,.p2,.p3,.p4
+{
+	display: none;
 
 }
-
-
-
-/*.colorchange 
+/*.h31,.h32,.h33,.h34 
 {
+	display: none;
+
+}*/
+
+.section_rgba1, .section_rgba4 {
 	background-color: rgba(0,0,0,.5);
 	-webkit-transition: background-color 1s;
 	-moz-transition: background-color 1s;
 	-o-transition: background-color 1s;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-
+	
+}
+.section_rgba2{
+	background-color: rgba(0,0,0,.5);
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	
+}
+.section_rgba3 {
+	background-color: rgba(0,0,0,.5);
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	
+}
+.section_rgba1:hover{
+	background-color: rgba(99,56,0,.93);
 
 }
-.colorchange:hover 
-{
-	background-color: 
+.section_rgba4:hover {
+	background-color: rgba(120,34,0,.93);	
+	}
+.section_rgba2:hover{
+	background-color: rgba(55,168,167,.93);
 }
-
-/*.hover12 figure {
-	background: #1abc9c;
+.section_rgba3:hover {
+	background-color: rgba(147,64,63,.93);
 }
-.hover12 figure img {
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.hover12 figure:hover img {
-	opacity: .5;
-}*/
-
-
-#servicios2, #servicios4
-
-{
-	display: block;
-	width: 48%;
-	margin-left: 1%;
-	margin-right: 1%;
-	float: left;
-	text-align: center;
-	background: #dcdbd9;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	height: 475px;
-	overflow: hidden;
-
-
-}
-
-#servicios1 h2, #servicios2 h2,#servicios3 h2,#servicios4 h2 
-{
-	margin-top: 10%;
-	margin-bottom: 1%
-}
-
-#servicios1 img, #servicios3 img
-{
-	width: 570px;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 4%;
-
-}
-#servicios2 img, #servicios4 img
-{
-	width: 570px;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 4%;
-
-}
-
-#servicios1 p,#servicios2 p,#servicios3 p, #servicios4 p
-{
-	margin-left: 5%;
-	margin-right: 2.5%;
-	font-weight: bold;
-	font-size: 16px;
-	/*background-color: rgba(0,0,0,.3);*/
-
-}
-
-
-
-
 
 
 
@@ -549,6 +560,36 @@ footer #piecera #content3 p
 	background-size: cover;
 	margin-bottom: 395px;
 }
+#imagenes 
+{
+	margin-bottom: 1050px;
+}
+#section1, #section2, #section3, #section4
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#section1 h3, #section2 h3, #section3 h3, #section4 h3{
+
+	padding-top: 3%;
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+
+		
+	
+	} 
+	#section1 p, #section2 p, #section3 p, #section4 p{
+
+	padding-top: 20px;
+	font-size: 25px;
+
+	
+	}
+
+
+
 	/*****************************************
 			CODIGO NUEVO EN 920PX
 	*****************************************/
@@ -583,7 +624,29 @@ footer #piecera #content3 p
 	{
 		margin-bottom: 350px;
 	}
-	footer
+	#imagenes 
+{
+	margin-bottom: 1100px;
+}
+
+	#section1 h3, #section2 h3, #section3 h3, #section4 h3{
+
+	padding-top: 2%;
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+
+		
+	
+	} 
+	#section1 p, #section2 p, #section3 p, #section4 p{
+
+	padding-top: 20px;
+	font-size: 16px;
+
+	
+	}
+		footer
 	{
 		height: 300px;
 		margin-top: 100px;
