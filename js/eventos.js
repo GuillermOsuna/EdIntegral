@@ -1,45 +1,55 @@
 $(document).ready(main);
-$(document).ready(main_der);
 
 
 
 var contador=1;
-var contador11=1;
 function main(){
+
+$(".mas").hover(function(){
+    $('#eventos_izquierda').css("-webkit-filter", "grayscale(100%)");
+    $('#eventos_izquierda').css("filter", "grayscale(100%)");
+    }, function(){
+    $('#eventos_izquierda').css("-webkit-filter", "grayscale(0%)");
+    $('#eventos_izquierda').css("filter", "grayscale(0%)");
+});
+
+$(".mas_der").hover(function(){
+    $('#eventos_derecha').css("-webkit-filter", "grayscale(100%)");
+    $('#eventos_derecha').css("filter", "grayscale(100%)");
+    }, function(){
+    $('#eventos_derecha').css("-webkit-filter", "grayscale(0%)");
+    $('#eventos_derecha').css("filter", "grayscale(0%)");
+});
+
 $('.mas').click(function(){
 
 		if(contador==1){
 
-			$('#eventos_izquierda').css('background-size', '210% 100%');
+			$('.flecha').css('right', '-50%');
 			$('#cont').animate({
-				right:'35%'
+				right:'39%'
 			});
-			$('#cont').css('margin-top', '3%');
+			$('#cont').css('top', '930px');
 
 		$('.mas').animate({
-				right:'2%'
+				right:'1%'
 			});
 		$('.mas').css('margin-top', '350px');
 		$('#txt').css('opacity', '1');
-
-	
-			
-
-		
 			contador=0;
 		}
 		else{
 		
-			$('#eventos_izquierda').css('background-size', '100% 100%');
+			$('.flecha').css('right', '67%');
 
 			$('#cont').animate({
-				right:'50%'
+				right:'45%'
 			});
-			$('#cont').css('margin-top', '13%');
+			$('#cont').css('top', '1050px');
 
 			$('.mas').css('margin-top', '185px');
 			$('.mas').animate({
-				right:'40%'
+				right:'35%'
 			});
 			$('#txt').css('opacity', '0');
 
@@ -47,135 +57,45 @@ $('.mas').click(function(){
 			contador=1;
 		}
 	});
-$('.mas11').click(function(){
-
-		if(contador11==1){
-
-			$('#eventos_izquierda11').css('background-size', '210% 100%');
-			$('#cont11').animate({
-				right:'35%'
-			});
-			$('#cont11').css('margin-top', '3%');
-
-		$('.mas11').animate({
-				right:'2%'
-			});
-		$('.mas11').css('margin-top', '350px');
-		$('#txt11').css('opacity', '1');
-
-	
-			
-
-		
-			contador11=0;
-		}
-		else{
-		
-			$('#eventos_izquierda11').css('background-size', '100% 100%');
-
-			$('#cont11').animate({
-				right:'50%'
-			});
-			$('#cont11').css('margin-top', '13%');
-
-			$('.mas11').css('margin-top', '185px');
-			$('.mas11').animate({
-				right:'40%'
-			});
-			$('#txt11').css('opacity', '0');
-
-
-			contador11=1;
-		}
-	});
-}
 
 
 
 
 var contador_der=1;
-var contador_der21=1;
-function main_der(){
-$('#mas_der').click(function(){
+$('.mas_der').click(function(){
 
 		if(contador_der==1){
 
-			$('.blancoderecha').css('left', '-52%');
+			$('.flecha_der').css('left', '-50%');
 			$('#cont_der').animate({
-				left:'41%'
+				right:'39%'
 			});
-			$('#cont_der').css('margin-top', '3%');
+			$('#cont_der').css('top', '1330px');
 
-		$('#mas_der').animate({
-				left:'2%'
+		$('.mas_der').animate({
+				right:'96%'
 			});
-		$('#mas_der').css('margin-top', '350px');
-		$('#txt20').css('opacity', '1');
-
-	
-			
-
-		
+		$('.mas_der').css('margin-top', '350px');
+		$('#txt_der').css('opacity', '1');
 			contador_der=0;
 		}
 		else{
 		
-			$('.blancoderecha').css('left', '0%');
+			$('.flecha_der').css('left', '60%');
 
 			$('#cont_der').animate({
-				left:'50%'
+				right:'20%'
 			});
-			$('#cont_der').css('margin-top', '13%');
+			$('#cont_der').css('top', '1450px');
 
-			$('#mas_der').css('margin-top', '185px');
-			$('#mas_der').animate({
-				left:'40%'
+			$('.mas_der').css('margin-top', '185px');
+			$('.mas_der').animate({
+				right:'55%'
 			});
-			$('#txt20').css('opacity', '0');
+			$('#txt_der').css('opacity', '0');
 
 
 			contador_der=1;
-		}
-	});
-$('#mas_der21').click(function(){
-
-		if(contador_der21==1){
-
-			$('.blancoderecha21').css('left', '-52%');
-			$('#cont_der21').animate({
-				left:'41%'
-			});
-			$('#cont_der21').css('margin-top', '3%');
-
-		$('#mas_der21').animate({
-				left:'2%'
-			});
-		$('#mas_der21').css('margin-top', '350px');
-		$('#txt21').css('opacity', '1');
-
-	
-			
-
-		
-			contador_der21=0;
-		}
-		else{
-		
-			$('.blancoderecha21').css('left', '0%');
-
-			$('#cont_der21').animate({
-				left:'50%'
-			});
-			$('#cont_der21').css('margin-top', '13%');
-
-			$('#mas_der21').css('margin-top', '185px');
-			$('#mas_der21').animate({
-				left:'40%'
-			});
-			$('#txt21').css('opacity', '0');
-
-
-			contador_der21=1;
 		}
 	});
 }

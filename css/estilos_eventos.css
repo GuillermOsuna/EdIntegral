@@ -97,22 +97,7 @@ header{
 	text-decoration: none;
 	-webkit-transition: color 2s;
 	-moz-transition: color 2s;
-	-o-transition: color 2s;
-
-	&::after{
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 1px;
-		visibility: hidden;
-		transform: scaleX(1);
-		background-color: red;
-		transition: all .3s ease-in;
-
-	}
-		
+	-o-transition: color 2s;		
 }
 
 
@@ -157,19 +142,18 @@ header{
 .inf_back{
 	width: 100%;
 	height: 700px;
+	top:0;
 	padding-top: 200px;
-	top: 0px;
 	position: absolute;
 	float: left;
 	color: #fff;
 	text-align: center;
 	z-index: -49;
 	background-color: rgba(0,0,0,.5);
-	
 }
 
 .inf_back h1{
-	 font-size: 5em;
+	font-size: 5em;
     letter-spacing: 0.14em;
 }
 
@@ -198,13 +182,12 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	display: block;
 	margin-top: 400px;
 	padding:0;
-	background-color: #e2cb92;
+	background-color: #fff;
 	width: 100%;
 	height: 500px;
 	overflow: hidden;
 	text-align: center;
 }
-
 #contenido{
 	margin-top: 9%;
 	margin-right:2%;
@@ -221,107 +204,140 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	letter-spacing: 2px;
 	text-align: center;
 }
-#guion{
-	display: block;
-	position: relative;
-	letter-spacing: .1px;
-	color:black;
-	padding:0;
-	margin:0;
-	
-	transform : rotate(90deg);
-	-moz-transform : rotate(90deg); /* Firefox */
-	-webkit-transform : rotate(90deg); /* Chrome - Safari */
-	-o-transform : rotate(90deg); /* Opera */
 
-	-webkit-transition: bottom 2s;
-	-moz-transition: bottom 2s;
-	-o-transition: bottom 2s;
-}
-#eventos_izquierda{
-	background: url(../img/flechaizquierda.png)    no-repeat;
-}
-#eventos_izquierda11{
-	background: url(../img/flechaizquierda.png)    no-repeat;
-}
-#eventos_izquierda,#eventos_izquierda11, #eventos_derecha,#eventos_derecha21{
+
+/*IZQUIERDA*/
+
+#eventos_izquierda, #eventos_izquierda_segundo, #eventos_derecha{
 	background-size: 100% 100%;
 	float:left;
-	background-color: #e2cb92;
 	overflow: hidden;
 	width: 100%;
 	height: 400px;
 	color:white;
-	-webkit-transition: background-size 1.2s;
-	-moz-transition: background-size 1.2s;
-	-o-transition: background-size 1.2s;
+
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	
+	-webkit-transition: filter 1.5s;
+	-moz-transition: filter 1.5s;
+	-o-transition: filter 1.5s;
+	-webkit-transition: -webkit-filter 1.5s;
+	-moz-transition: -webkit-filter 1.5s;
+	-o-transition: -webkit-filter 1.5s;
 }
-#txt, #txt11, #txt20,#txt21{
+#eventos_izquierda{
+	background: url(../img/eyplazas/concurso.png) 100% 50% no-repeat;
+}
+#eventos_izquierda_segundo{
+	background: url(../img/eyplazas/MAGNICENTRO.png) 100% 50% no-repeat;
+}
+.flecha, .flecha_segundo, .flecha_der{
+	position: absolute;
+	background-color: #F2F2F2;
+	width: 2000px;
+	height: 2000px;
+	border: 1px solid black;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 15px rgba(100,100,100, 1);
+	z-index: 1;
+	
+
+	-webkit-transition: right 1.2s;
+	-moz-transition: right 1.2s;
+	-o-transition: right 1.2s;
+
+	transform : rotate(45deg);
+	-moz-transform : rotate(45deg); /* Firefox */
+	-webkit-transform : rotate(45deg); /* Chrome - Safari */
+	-o-transform : rotate(45deg); /* Opera */
+}
+.flecha{
+	right: 65%;
+	top:100px;
+}
+.flecha_segundo{
+	position: relative;
+	right: 100%;
+	bottom:800px;
+	z-index: 0;
+}
+#cont, #cont_segundo, #cont_der{
+	position: absolute;
+	width: 300px;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	top:1050px;
+	right: 60%;
+	z-index: 1000;
+
+	-webkit-transition: top 2s;
+	-moz-transition: top 2s;
+	-o-transition: top 2s;	
+}
+#cont_segundo{
+	top:1850px;
+}
+
+.mas, .mas_segundo, .mas_der{
+	position: absolute;
+	outline-style: none;
+	border: 1px solid black;
+    box-sizing: border-box;
+	border-radius: 100px;
+
+	width: 40px;
+	height: 40px;
+	float: right;
+	right: 45%;
+	margin-top: 185px;
+	font-size: 20px;
+	text-align: center;
+	color:black;
+	background-color: #fff;
+	cursor: pointer;
+	z-index: 100;
+
+	-webkit-transition: margin 1.7s;
+	-moz-transition: margin 1.7s;
+	-o-transition: margin 1.7s;
+
+
+}
+
+.mas:hover, .mas_segundo:hover, .mas_der:hover{
+	background-color: #5C5C5A;
+	color:white;
+}
+
+
+#txt, #txt_segundo, #txt_der{
 	position: absolute;
 	text-align: center;
 	padding:200px;
 	padding-top:150px;
 	padding-bottom:0px;
 	font-size: 20px;
-	z-index: 2;
+	top:900px;
+	color:black;
+	z-index: 1;
 	opacity:0;
 
 	-webkit-transition: opacity 1s;
 	-moz-transition: opacity 1s;
 	-o-transition: opacity 1s;
 }
-.eventos_izquierda_home{
-	/*margin-top: 400px;*/
+#txt_segundo{
+	top:1700px;
 }
 
 .eventos_izquierda_final{
 	margin-bottom: 298px;
 	}
 
-
-
 /*IZQUIERDA*/
-#cont,#cont11{
-	position: absolute;
-	width: 300px;
-	margin-top: 13%;
-	margin-left: 20%;
-	right: 50%;
-	text-align: center;
-	font-size: 25px;
-	z-index: 3;
 
-	-webkit-transition: margin 2s;
-	-moz-transition: margin 2s;
-	-o-transition: margin 2s;
-
-	
-}
-
-
-.mas,.mas11{
-	position: absolute;
-	outline-style: none;
-	border-style: none;
-	border-radius: 100px;
-	width: 40px;
-	height: 40px;
-	font-size: 20px;
-	text-align: center;
-	color:white;
-	background-color: #333332;
-	right:40%;
-	margin: 185px 0 0 0;
-	z-index: 10;
-	cursor: pointer;
-	-webkit-transition: margin 1.7s;
-	-moz-transition: margin 1.7s;
-	-o-transition: margin 1.7s;
-
-}
-.mas:hover, .mas11:hover, #mas_der:hover{
-	background-color: #5C5C5A;
-}
 
 
 
@@ -330,60 +346,33 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 
 /*DERECHA*/
-#eventos_derecha,#eventos_derecha21{
-	background-color: #402e00;
-}
-.blancoderecha, .blancoderecha21{
-	position: absolute;
-	left: 0%;
-	width: 100.5%;
-	height: 400px;
-	z-index: 0;
-	-webkit-transition: left .9s;
-	-moz-transition: left .9s;
-	-o-transition: left .9s;
-}
-
-#cont_der,#cont_der21{
-	position: absolute;
-	width: 300px;
-	margin-top: 13%;
-	margin-right: 20%;
-	left: 50%;
-	text-align: center;
-	font-size: 25px;
-	z-index: 3;
-
-	-webkit-transition: margin 2s;
-	-moz-transition: margin 2s;
-	-o-transition: margin 2s;
-
+#eventos_derecha{
+	background:url(../img/eyplazas/TAIPAK.png) 0% 100% no-repeat;
 	
 }
-
-
-
-
-#mas_der,#mas_der21{
-	position: absolute;
-	outline-style: none;
-	border-style: none;
-	border-radius: 100px;
-	width: 40px;
-	height: 40px;
-	font-size: 20px;
-	text-align: center;
-	color:white;
-	background-color: #333332;
-	left:40%;
-	margin: 185px 0 0 0;
-	z-index: 10;
-	cursor: pointer;
-
-	-webkit-transition: margin 1.7s;
-	-moz-transition: margin 1.7s;
-	-o-transition: margin 1.7s;
+#cont_der{
+	right: 20%;
+	top:1450px;
 }
+.flecha_der{
+	position: relative;
+	/*top:500px;
+	right:-100%;*/
+	bottom:800px;
+	left: 65%;
+	-webkit-transition: left 1.2s;
+	-moz-transition: left 1.2s;
+	-o-transition: left 1.2s;
+}
+.mas_der{
+	right:55%;
+}
+#txt_der{
+	top:1300px;
+}
+
+/*DERECHA*/
+
 
 
 /*SEPARADOR*/
@@ -609,7 +598,7 @@ footer #piecera #content3 p
 		width: 100%;	
 	}
 	#bienvenidos{
-		height: 600px;
+		
 	}
 	#contenido{
 		width: 100%;
@@ -618,6 +607,13 @@ footer #piecera #content3 p
 		display: none;
 	}
 }
+
+
+@media screen and (max-width: 600px){
+	
+
+}
+
 
 @media screen and (max-width: 480px){
 	.inf_back h1{
