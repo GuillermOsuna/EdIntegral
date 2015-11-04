@@ -324,7 +324,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 
 	color: #fff;
-	text-align: left;
+	text-align: center;
 	
 	}
 
@@ -333,7 +333,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	display: none;
 
 }
-/*.h31,.h32,.h33,.h34 
+/*.h311,.h322,.h332,.h344
 {
 	display: none;
 
@@ -361,17 +361,17 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	
 }
 .section_rgba1:hover{
-	background-color: rgba(99,56,0,.93);
+	background-color: rgba(30,30,30,.85);
 
 }
 .section_rgba4:hover {
-	background-color: rgba(120,34,0,.93);	
+	background-color: rgba(30,30,30,.85);	
 	}
 .section_rgba2:hover{
-	background-color: rgba(55,168,167,.93);
+	background-color: rgba(30,30,30,.85);
 }
 .section_rgba3:hover {
-	background-color: rgba(147,64,63,.93);
+	background-color: rgba(30,30,30,.85);
 }
 
 
@@ -572,12 +572,22 @@ footer #piecera #content3 p
 
 #imagenes 
 {
-	margin-bottom: 999px;
+	/*height: 1585px;*/
+
+	height:1570px;
+	/*margin-bottom: 299px;*/
+
 }
+#section1 
+{
+	margin-top: 2%;
+}
+
 #section1, #section2, #section3, #section4
 {
 	width: 100%;
 	margin: 0 auto;
+	margin-bottom: 2%;
 }
 
 #section1 h3, #section2 h3, #section3 h3, #section4 h3{
@@ -636,23 +646,27 @@ footer #piecera #content3 p
 	}
 	#imagenes 
 {
-	margin-bottom: 1050px;
+	margin-bottom: 600px;
+	height:1300px;
 }
+
 
 	#section1 h3, #section2 h3, #section3 h3, #section4 h3{
 
 	padding-top: 2%;
 	color: #fff;
 	text-align: center;
-	font-size: 30px;
+	font-size: 45px;
 
 		
 	
 	} 
 	#section1 p, #section2 p, #section3 p, #section4 p{
 
-	padding-top: 20px;
-	font-size: 16px;
+	padding-top: 0px;
+	font-size: 21px;
+	display: none;
+	opacity: 0;
 
 	
 	}
