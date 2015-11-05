@@ -426,11 +426,9 @@ footer{
 	z-index: -98;
 	text-align: center;
 	font-size: 18px;
-}
-footer h2, h3, p{
-	font-weight: 200;
-}
+	font-weight: lighter;
 
+}
 footer #piecera
 {
 	width: 100%;
@@ -444,18 +442,20 @@ footer #piecera #content,#content2,#content3
 	margin-right:2%;
 	margin-left:3%;
 	float:left;
+	font-weight: lighter;
 
 }
 footer #piecera #content ul li,#content2 ul li, #content3 ul li
 {
 	display: inline-block;
-	margin: 5px 8px;
+	margin: 5px 6px;
+	font-weight: lighter;
 
 }
 footer #piecera #content img 
 {
 	width: 150px;
-	height: 35px;
+	height: 37px;
 }
 
 
@@ -472,6 +472,7 @@ footer #piecera #content2 p
 	margin-left: 15%;
 	font-size: 13px;
 	padding-left: 1%;
+	font-weight: lighter;
 
 }
 footer #piecera #content2 ul li
@@ -481,10 +482,12 @@ footer #piecera #content2 ul li
 footer #piecera #content2 h3 
 {
 	margin-top: -28%;
+	font-weight: lighter;
 }
 footer #piecera #content3 ul li
 {
 	margin-bottom: 5%;
+	font-weight: lighter;
 }
 footer #piecera #content3 img
 {
@@ -496,6 +499,7 @@ footer #piecera #content3 p
 {
 	margin-top: -16%;
 	margin-left: 15%;
+	font-weight: lighter;
 
 }
 
@@ -651,6 +655,10 @@ footer #piecera #content3 p
 	#bienvenidos{
 		margin-top: 550px;
 	}
+	.contact
+	{
+		height: 100%;
+	}
 	.fields input 
 	{
 	
@@ -673,6 +681,9 @@ footer #piecera #content3 p
 		width: 90%;
 	
 
+	}
+	.btn-dark{
+		margin-bottom: 5%;
 	}
 	#map
 	{

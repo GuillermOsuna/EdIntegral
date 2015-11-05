@@ -274,15 +274,15 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 #section3{
 	
-	background: url(../img/p3.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/edificios/dispamocusa.png) 50% 0 no-repeat fixed;
 }
 #section4{
 	
-	background: url(../img/p4.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/edificios/lonja.png) 50% 0 no-repeat fixed;
 }
 #section5{
 	
-	background: url(../img/p5.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/eyplazas/michelin.png) 50% 0 no-repeat fixed;
 }
 
 #Home, #section2, #section3, #section4, #section5{
@@ -304,10 +304,28 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
  #section5{
  	margin-bottom: 298px;
  }
- article{
- 	padding: 100px;
+
+ .descripcion {
+ 	background-color: rgba(30,30,30,.8);
+ 	width: 27%;
+ 	color: white;
+ 	
+ 	margin-left: 2%;
+ 	height: 110px;
+ 	overflow: hidden;
+ 	text-align: left;
+ 	margin-top: 40%;
+ 	position: absolute;
  }
- .geek{
+ .descripcion .proyecto
+ {
+ 	font-size: 16px;
+ 	font-style: bolder;
+ 	margin-left: 10px;
+ 	margin-top: 10px;
+ 	
+ }
+ /*.geek{
  	background: url();
  	display: block;
  	height: 368px;
@@ -340,7 +358,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	margin-left: 35px;
 
 
-}
+}*/
 
 /***************************************
 ARRIBA VA TODO EL CONTENIDO DE LA PAGINA
@@ -547,6 +565,17 @@ footer #piecera #content3 p
 	background-size: cover;
 	margin-bottom: 395px;
 }
+
+.geek h1 
+{
+	margin-left: -185px;
+	margin-right: -100px;
+}
+.geek p 
+{
+	font-size: 16px;
+	margin-left: 100px;
+}
 	/*****************************************
 			CODIGO NUEVO EN 920PX
 	*****************************************/
@@ -581,6 +610,8 @@ footer #piecera #content3 p
 	{
 		margin-bottom: 250px;
 	}
+
+
 	footer
 	{
 		height: 200px;
