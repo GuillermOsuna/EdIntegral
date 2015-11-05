@@ -213,49 +213,22 @@ header{
 	font-size: 20px;
 }
 
-#bienvenidos{
-	display: block;
-	margin-top: 400px;
-	padding:0;
-	background-color: #fff;
-	width: 100%;
-	height: 500px;
-	overflow: hidden;
-	text-align: center;
-}
 
-#contenido{
-	margin-top: 9%;
-	margin-right:2%;
-	margin-left:2%;
-	float:left;
-	width: 46%;
+.introduccion {
+	margin-right:10%;
+	margin-left:10%;
+	text-align: center;
+	color: black;
+	width: 80%;
+
 }
-#contenido h1{
+.introduccion h1 
+{
 	font-size: 35px;
 	letter-spacing: 1px;
+	padding-top: 5%;
 }
-#contenido{
-	font-size: 20px;
-	letter-spacing: 2px;
-}
-#guion{
-	display: block;
-	position: relative;
-	letter-spacing: .1px;
-	color:black;
-	padding:0;
-	margin:0;
-	
-	transform : rotate(90deg);
-	-moz-transform : rotate(90deg); /* Firefox */
-	-webkit-transform : rotate(90deg); /* Chrome - Safari */
-	-o-transform : rotate(90deg); /* Opera */
 
-	-webkit-transition: bottom 2s;
-	-moz-transition: bottom 2s;
-	-o-transition: bottom 2s;
-}
 
 
 /***********************************
@@ -264,8 +237,9 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 
 #Home{
-	background: url(../img/p1.jpg) 50% 0% no-repeat fixed;
+	/*background: url(../img/p1.jpg) 50% 0% no-repeat fixed;*/
 	top: 400px;
+	background-color: #fff;
 }
 
 #section2{
@@ -325,40 +299,18 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
  	margin-top: 10px;
  	
  }
- /*.geek{
- 	background: url();
- 	display: block;
- 	height: 368px;
- 	margin: 0px auto;
- 	width: 517px;
+
+ .mas 
+ {
+ 	background-color: rgba(30,30,30,.8);
+ 	border-radius: 150px;
+ 	border-color: black, 1px, solid
+ 	color: white;
+ 	font-size: 30px;
+ 	width: 15px;
+
  }
-.geek h1{
-	color: white;
-	text-align: left;
-	vertical-align: top;
-	margin-left: -335px;
-	padding-top: 425px;
 
-}
-
-.geek h1 p
-{
-	
-	padding:6px;
-	color:white; 
-	background-color: rgba(51, 51, 51,0.7); 
-	margin-right: 385px;
-
-
-}
-
-.geek h1 p a 
-{
-	color: #fff;
-	margin-left: 35px;
-
-
-}*/
 
 /***************************************
 ARRIBA VA TODO EL CONTENIDO DE LA PAGINA
@@ -566,16 +518,19 @@ footer #piecera #content3 p
 	margin-bottom: 395px;
 }
 
-.geek h1 
-{
-	margin-left: -185px;
-	margin-right: -100px;
-}
-.geek p 
-{
-	font-size: 16px;
-	margin-left: 100px;
-}
+.descripcion {
+ 	width: 50%;
+ 	height: 110px;
+ 	margin-top: 70%;
+
+ }
+
+
+
+
+
+
+
 	/*****************************************
 			CODIGO NUEVO EN 920PX
 	*****************************************/
@@ -610,6 +565,18 @@ footer #piecera #content3 p
 	{
 		margin-bottom: 250px;
 	}
+
+	.descripcion 
+	{
+ 	width: 80%;
+ 	height: 110px;
+ 	margin-top: 120%;
+
+ 	}
+
+
+
+
 
 
 	footer
