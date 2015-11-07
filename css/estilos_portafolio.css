@@ -367,7 +367,7 @@ ARRIBA VA TODO EL CONTENIDO DE LA PAGINA
 	}
 
 .section_rgba  {
-	background-color: rgba(70,70,70,.83);
+	background-color: rgba(0,0,0,.8);
 	-webkit-transition: background-color 1s;
 	-moz-transition: background-color 1s;
 	-o-transition: background-color 1s;

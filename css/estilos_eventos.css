@@ -181,34 +181,35 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 #bienvenidos{
 	display: block;
 	margin-top: 400px;
-	padding:0;
+	float: left;
 	background-color: #fff;
 	width: 100%;
 	height: 500px;
-	overflow: hidden;
-	text-align: center;
 }
 #contenido{
-	margin-top: 9%;
-	margin-right:2%;
-	margin-left:2%;
-	float:left;
-	width: 90%;
+	display: block;
+	text-align: center;
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-top: 150px;
 }
 #contenido h1{
 	font-size: 35px;
 	letter-spacing: 1px;
 }
-#contenido{
+#contenido p{
+	margin-top: 20px;
 	font-size: 20px;
 	letter-spacing: 2px;
-	text-align: center;
+	margin-right: 100px;
+	margin-left: 100px;
 }
 
 
 /*IZQUIERDA*/
 
-#eventos_izquierda, #eventos_izquierda_segundo, #eventos_derecha{
+#eventos_izquierda, #eventos_izquierda_segundo, #eventos_derecha, #eventos_derecha_segundo{
 	background-size: 100% 100%;
 	float:left;
 	overflow: hidden;
@@ -232,37 +233,34 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 #eventos_izquierda_segundo{
 	background: url(../img/eyplazas/MAGNICENTRO.png) 100% 50% no-repeat;
 }
-.flecha, .flecha_segundo, .flecha_der{
-	position: absolute;
-	background-color: #F2F2F2;
-	width: 2000px;
-	height: 2000px;
-	border: 1px solid black;
-    box-sizing: border-box;
-    box-shadow: 1px 0px 15px rgba(100,100,100, 1);
-	z-index: 1;
-	
-
-	-webkit-transition: right 1.2s;
-	-moz-transition: right 1.2s;
-	-o-transition: right 1.2s;
-
-	transform : rotate(45deg);
-	-moz-transform : rotate(45deg); /* Firefox */
-	-webkit-transform : rotate(45deg); /* Chrome - Safari */
-	-o-transform : rotate(45deg); /* Opera */
-}
-.flecha{
-	right: 65%;
-	top:100px;
-}
-.flecha_segundo{
+.flecha, .flecha_segundo{
+	border-style: solid;
+	border-color:transparent transparent #F2F2F2 transparent;
+	border-width: 0 100px 200px 0px;
+	height: 0;
+	right: 0%;
+	width: 53%;
 	position: relative;
-	right: 100%;
-	bottom:800px;
-	z-index: 0;
+	margin:0;
+
+	-webkit-transition: width .6s;
+	-moz-transition: width .6s;
+	-o-transition: width .6s;
 }
-#cont, #cont_segundo, #cont_der{
+.flecha:after, .flecha_segundo:after{
+	content:"";
+	position: absolute;
+	top:200px;
+	left:0px;
+	width: 100%;
+	height: 0;
+	border-style: solid;
+	border-color:#F2F2F2 transparent transparent transparent;
+	border-width: 200px 100px 0 0;
+}
+
+
+#cont, #cont_segundo, #cont_der, #cont_der_segundo{
 	position: absolute;
 	width: 300px;
 	text-align: center;
@@ -280,7 +278,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	top:1850px;
 }
 
-.mas, .mas_segundo, .mas_der{
+.mas, .mas_segundo, .mas_der, .mas_der_segundo{
 	position: absolute;
 	outline-style: none;
 	border: 1px solid black;
@@ -290,7 +288,7 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 	width: 40px;
 	height: 40px;
 	float: right;
-	right: 45%;
+	right: 48%;
 	margin-top: 185px;
 	font-size: 20px;
 	text-align: center;
@@ -306,13 +304,13 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 }
 
-.mas:hover, .mas_segundo:hover, .mas_der:hover{
+.mas:hover, .mas_segundo:hover, .mas_der:hover, .mas_der_segundo:hover{
 	background-color: #5C5C5A;
 	color:white;
 }
 
 
-#txt, #txt_segundo, #txt_der{
+#txt, #txt_segundo, #txt_der, #txt_der_segundo{
 	position: absolute;
 	text-align: center;
 	padding:200px;
@@ -347,42 +345,88 @@ ABAJO VA EL CONTENIDO DE LA PAGINA
 
 /*DERECHA*/
 #eventos_derecha{
-	background:url(../img/eyplazas/TAIPAK.png) 0% 100% no-repeat;
-	
+	background:url(../img/eyplazas/TAIPAK.png) 0% 100% no-repeat;	
+}
+#eventos_derecha_segundo{
+	background:url(../img/RESIDENCIA/sergioPastor.png) 0% 100% no-repeat;	
 }
 #cont_der{
 	right: 20%;
 	top:1450px;
 }
-.flecha_der{
+#cont_der_segundo{
+	right: 20%;
+	top:2250px;
+}
+.flecha_der, .flecha_der_segundo{
+	border-style: solid;
+	border-color:transparent transparent #F2F2F2 transparent;
+	border-width: 0 0px 200px 100px;
+	height: 0;
+	left: 40%;
+	width: 120%;
 	position: relative;
-	/*top:500px;
-	right:-100%;*/
-	bottom:800px;
-	left: 65%;
-	-webkit-transition: left 1.2s;
-	-moz-transition: left 1.2s;
-	-o-transition: left 1.2s;
+	margin:0;
+
+	-webkit-transition: left .6s;
+	-moz-transition: left .6s;
+	-o-transition: left .6s;
 }
-.mas_der{
-	right:55%;
+.flecha_der:after, .flecha_der_segundo:after{
+	content:"";
+	position: absolute;
+	top:200px;
+	left: -100px;
+	width: 100%;
+	height: 0;
+	border-style: solid;
+	border-color:#F2F2F2 transparent transparent transparent;
+	border-width: 200px 0px 0 100px;
 }
-#txt_der{
+
+.mas_der, .mas_der_segundo{
+	right:48%;
+}
+#txt_der, #txt_der_segundo{
 	top:1300px;
 }
+#txt_der_segundo{
+	top:2100px;
+}
+
 
 /*DERECHA*/
 
 
 
 /*SEPARADOR*/
-#separador{
-	border: 0;
+.separador{
+	position: relative;
+	margin-top: 199px;
+	border: 0px;
     height: 1px;
     width: 100%;
     background: black;
     }
+/*SEPARADOR*/
 
+.fotos_izq, .fotos_der{
+	display: block;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	margin-top:-1px;
+	float: left;
+	width: 50%;
+	height: 600px;
+}
+.fotos_izq{
+	background: url(../img/cap2.png) 50% 50% no-repeat;
+	background-size: cover;
+}
+.fotos_der{
+	background: red;
+}
 
 
 
