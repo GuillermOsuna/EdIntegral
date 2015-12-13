@@ -193,11 +193,13 @@ video{
 	height: 500px;
 	overflow: hidden;
 	text-align: center;
+
+
 }
 .arrow_left{
 	border-style: solid;
-	border-color:#2A2A2A transparent transparent transparent;
-	border-width: 500px 200px 0px 0px;
+	border-color:#333332 transparent transparent transparent;
+	border-width: 500px 0px 0px 0px;
 	height: 0;
 	left:0;
 	width: 0px;
@@ -210,8 +212,8 @@ video{
 }
 .arrow_right{
 	border-style: solid;
-	border-color:transparent transparent #2A2A2A transparent;
-	border-width: 0px 0px 500px 200px;
+	border-color:transparent transparent #333332 transparent;
+	border-width: 0px 0px 500px 0px;
 	height: 0;
 	right: 0;
 	width: 0px;
@@ -252,6 +254,13 @@ video{
 	-moz-transition: font-size 1s;
 	-o-transition: font-size 1s;
 }
+
+.txt_primero{
+		display: block;
+	}
+	.txt_segundo{
+		display:none;
+	}
 
 
 /***************************
@@ -586,9 +595,7 @@ footer #piecera #content3 p
 	margin-bottom: 345px;
 
 }
-footer{
-	height: 550
-}
+
 
 }
 
@@ -614,18 +621,23 @@ footer{
 	font-size: 15px;
 	}
 	#bienvenidos{
-		height: 400px;
+		
 		margin-top: 550px;
 	}
 	#bienvenidos h1{
 		font-size: 30px;
-		padding-top: 30px;
+		padding-top: 70px;
 	}
 	#bienvenidos p{
-		font-size: 15px;
+		font-size: 16px;
 
 	}
-	
+	.txt_primero{
+		display: none;
+	}
+	.txt_segundo{
+		display: block;
+	}
 	
 	#prueba1{
 		margin-bottom: 348px;
